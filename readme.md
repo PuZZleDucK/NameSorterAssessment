@@ -2,7 +2,7 @@
 
 # Global X - Open Practice - Name Sorter Library
 
-I have presented the project as a mock library called ```NameSorter``` for the ```Open Practice``` framework with a demo cli interface.
+I have presented the project as a mock library called ```NameSorter``` in the ```Libs``` directory of the ```OpenPractice``` framework with a demo cli interface.
 
 I have developed the project on Ubuntu 17.10 and tested it in CI on Ubuntu 14.04. It would be ideal to include alternative platforms.
 
@@ -12,12 +12,17 @@ I have chosen to use Semaphore for my CI service primarily as it is what I'm mos
 
 The following sections consist of my personal notes for the project. They are included here to allow you to  easily follow my thinking and progress through the project and would not normally be included in the repository or documentation.
 
+## Assumptions
+
+- We want the program to give a best-effort if the list contains invalid names (name not in output, warning printed to console (as it occurs and summary at end), possible err-out.txt list?)
+
+
 ## The Plan
 
 - [x] init repo
 - [x] review GlobalX github repos for style/practices/project layout/etc
 - [x] review challenge
-- [ ] initialise project
+- [x] initialise project
 - [ ] setup CI
 - [ ] initialise documentation & wiki
 - [ ] initialise code metrics
@@ -33,21 +38,26 @@ The following sections consist of my personal notes for the project. They are in
 
 Observations from reviewing GlobalX public repositories on GitHub. They are presented in approximate order I expect to emulate the good examples:
 
-- [ ] mit / apache licence
-- [ ] top level Project & Project.Tests convention
+- [x] top level Project & Project.Tests convention
 - [ ] include guides (user/dev)
 - [ ] setup wiki
-- [ ] include examples / demos / samples
-- [ ] newbe/hackathon/low-hanging-fruit planning :D
-- [ ] unit, integration, stress tests and test helpers as separate (linked) projects
+- [ ] mit licence
 - [ ] CONTRIBUTING.md
+- [ ] include examples /
+- [x] include demo
+- [ ] include samples
+- [ ] newbe/hackathon/low-hanging-fruit planning :D
+- [x] unit test project
+- [ ] integration test project
+- [ ] stress tests project
+- [ ] test helpers project
 
 - [ ] mostly long and descriptive naming
 - [ ] self documenting... comments usually explain "why" or "why not the usual/expected way"
-- [ ] model / view separation
+- [x] model / view separation - demo
 - [ ] validation and verbose error reporting
 - [ ] functional (foreach) style at times
-- [ ] nice .gitattributes
+- [x] nice .gitattributes
 - [ ] Fody NullGuard - investigate if time allows
 - [ ] honest about defects
 
@@ -86,7 +96,7 @@ Below is a collection of notes and check points I intend to cover that has been 
 - [ ] order that set first by last name
 - [ ] then by any given names the person may have
 - [ ] A name must have at least 1 given name
-- [ ] A name may have up to 3 given names.
+- [ ] A name may have up to 3 given names (what should I do for lists with invalid names?)
 
 ### Example Usage
 
@@ -132,12 +142,12 @@ Shelby Nathan Yoder
 
 ### Assessment Criteria
 
-- [ ] We will execute your submission against a list with a thousand names.
+- [ ] We will execute your submission against a list with a thousand names - minimal stress test
 - [x] The solution should be available for review on github.
 - [ ] The names should be sorted correctly.
 - [ ] It should print the sorted list of names to screen.
 - [ ] It should write/overwrite the sorted list of names to a file called sorted-names-list.txt.
-- [ ] Unit tests should exist.
+- [x] Unit tests should exist.
 - [ ] Minimal, practical documentation should exist.
 - [ ] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
 - [ ] When you are done let us know the url of the repo.
