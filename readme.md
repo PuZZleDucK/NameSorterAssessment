@@ -8,35 +8,21 @@ I have developed the project on Ubuntu 17.10 and tested it in CI on Ubuntu 14.04
 
 I have chosen to use Semaphore for my CI service primarily as it is what I'm most familiar with. An added bonus was that it is not a "supported by default" platform on Semaphore so I got to learn how to set it up from scratch. Alternative providers would also be a bonus.
 
-## Getting the project
+## Getting the "Open Practice" project
 
 ```sh
 git clone https://github.com/PuZZleDucK/NameSorterAssessment
-```
-
-## Running the sorter demo
-
-```sh
 cd NameSorterAssessment
-dotnet build
-chmod a+x OpenPractice/Demos/name-sorter/bin/Debug/netcoreapp2.0/name-sorter.dll
-./OpenPractice/Demos/name-sorter/bin/Debug/netcoreapp2.0/name-sorter.dll <file-to-sort>.txt
 ```
-
-## Continuous Integration
-
-CI is hosted on Semaphore at: https://semaphoreci.com/puzzleduck/namesorterassessment/
-
-[![Build Status](https://semaphoreci.com/api/v1/puzzleduck/namesorterassessment/branches/master/badge.svg)](https://semaphoreci.com/puzzleduck/namesorterassessment)
 
 # Behind the Scenes
 
 The following sections consist of my personal notes for the project. They are included here to allow you to  easily follow my thinking and progress through the project and would not normally be included in the repository or documentation.
 
-## Assumptions
+## Assumptions and Issues
 
 - We want the program to give a best-effort if the list contains invalid names (name not in output, warning printed to console (as it occurs and summary at end), possible err-out.txt list?)
-
+- Including the library in a mock "OpenPractice" project means that the the main readme.md and other files referring to the library are in the wrong place and should be in the Libs directory and will have to be reffered to in the new OpenPractice readme.md
 
 ## The Plan
 
@@ -45,14 +31,14 @@ The following sections consist of my personal notes for the project. They are in
 - [x] review challenge
 - [x] initialise project
 - [x] setup CI
-- [ ] initialise documentation & wiki
+- [x] initialise documentation & wiki
 - [ ] initialise code metrics
 - [ ] test program with no input
 - [ ] test program with simple inputs
 - [ ] test advanced inputs
 - [ ] add alternative CI platforms/providers
+- [ ] add release candidate
 - [ ] review submission (style, documentation, presentation, CI/CD?)
-
 
 
 ## GlobalX source code review observations
@@ -60,10 +46,10 @@ The following sections consist of my personal notes for the project. They are in
 Observations from reviewing GlobalX public repositories on GitHub. They are presented in approximate order I expect to emulate the good examples:
 
 - [x] top level Project & Project.Tests convention
-- [ ] include guides (user/dev)
-- [ ] setup wiki
-- [ ] mit licence
-- [ ] CONTRIBUTING.md
+- [x] include guides (user/dev) - readme.md/contributing.md
+- [x] setup wiki
+- [x] mit licence
+- [x] CONTRIBUTING.md
 - [ ] include examples /
 - [x] include demo
 - [ ] include samples
