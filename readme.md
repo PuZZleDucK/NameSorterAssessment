@@ -8,6 +8,27 @@ I have developed the project on Ubuntu 17.10 and tested it in CI on Ubuntu 14.04
 
 I have chosen to use Semaphore for my CI service primarily as it is what I'm most familiar with. An added bonus was that it is not a "supported by default" platform on Semaphore so I got to learn how to set it up from scratch. Alternative providers would also be a bonus.
 
+## Getting the project
+
+```sh
+git clone https://github.com/PuZZleDucK/NameSorterAssessment
+```
+
+## Running the sorter demo
+
+```sh
+cd NameSorterAssessment
+dotnet build
+chmod a+x OpenPractice/Demos/name-sorter/bin/Debug/netcoreapp2.0/name-sorter.dll
+./OpenPractice/Demos/name-sorter/bin/Debug/netcoreapp2.0/name-sorter.dll <file-to-sort>.txt
+```
+
+## Continuous Integration
+
+CI is hosted on Semaphore at: https://semaphoreci.com/puzzleduck/namesorterassessment/
+
+[![Build Status](https://semaphoreci.com/api/v1/puzzleduck/namesorterassessment/branches/master/badge.svg)](https://semaphoreci.com/puzzleduck/namesorterassessment)
+
 # Behind the Scenes
 
 The following sections consist of my personal notes for the project. They are included here to allow you to  easily follow my thinking and progress through the project and would not normally be included in the repository or documentation.
@@ -23,7 +44,7 @@ The following sections consist of my personal notes for the project. They are in
 - [x] review GlobalX github repos for style/practices/project layout/etc
 - [x] review challenge
 - [x] initialise project
-- [ ] setup CI
+- [x] setup CI
 - [ ] initialise documentation & wiki
 - [ ] initialise code metrics
 - [ ] test program with no input
@@ -149,5 +170,5 @@ Shelby Nathan Yoder
 - [ ] It should write/overwrite the sorted list of names to a file called sorted-names-list.txt.
 - [x] Unit tests should exist.
 - [ ] Minimal, practical documentation should exist.
-- [ ] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
+- [x] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
 - [ ] When you are done let us know the url of the repo.

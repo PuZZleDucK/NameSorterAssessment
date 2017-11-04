@@ -14,9 +14,9 @@ namespace Unit
     }
 
     [Fact]
-    public void BadTest()
+    public void SanityTest()
     {
-      Assert.False(true, "True should not be false");
+      Assert.True(true, "True should be true");
     }
   }
 }
