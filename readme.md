@@ -6,13 +6,17 @@ I have presented the project as a mock library called ```NameSorter``` for the `
 
 I have developed the project on Ubuntu 17.10 and tested it in CI on Ubuntu 14.04. It would be ideal to include alternative platforms.
 
-I have chosen to use Semaphore for my CI service primarily as it is what I'm most familiar with. An added bonus was that it is not a "supported by default" platform on Semaphore so I got to learn the setup required from scratch. Alternative providers would also be a bonus.
+I have chosen to use Semaphore for my CI service primarily as it is what I'm most familiar with. An added bonus was that it is not a "supported by default" platform on Semaphore so I got to learn how to set it up from scratch. Alternative providers would also be a bonus.
 
-# plan
+# Behind the Scenes
+
+The following sections consist of my personal notes for the project. They are included here to allow you to  easily follow my thinking and progress through the project and would not normally be included in the repository or documentation.
+
+## The Plan
 
 - [x] init repo
 - [x] review GlobalX github repos for style/practices/project layout/etc
-- [ ] review challenge
+- [x] review challenge
 - [ ] initialise project
 - [ ] setup CI
 - [ ] initialise documentation & wiki
@@ -25,7 +29,7 @@ I have chosen to use Semaphore for my CI service primarily as it is what I'm mos
 
 
 
-# GlobalX source code review observations
+## GlobalX source code review observations
 
 Observations from reviewing GlobalX public repositories on GitHub. They are presented in approximate order I expect to emulate the good examples:
 
@@ -55,21 +59,40 @@ Other observations not strictly relevant in no particular order:
 - some terse abbreviations in naming - only one code base
 - ```if (object) { one liner }``` used often - only one code base
 
-# The Challenge
+## The Challenge - GlobalX Coding Assessment
 
-GlobalX Coding Assessment
-The GlobalX coding assessment is just that, an assessment. The problem domain is deliberately simple, and you could very easily write an extremely terse solution that satisfies the requirement. But our goal is not to see you implement a trivial sorting algroithm. Most importantly it is to understand how your code communicates it's purpose clearly and with empathy to your potential team members. What do we mean by empathy? Empathy here is caring about how easy your code is to understand and navigate for the next engineer who touches it. Secondly it is to understand your ability to compose quality code that adheres to SOLID (https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles. Thirdly, to see how you write
-tests.
+Below is a collection of notes and check points I intend to cover that has been condensed from the origional assessment challenge.
 
-So, give us your best effort, a solution that you are proud of.
+### Notes
 
-The Goal: Name Sorter
-Build a name sorter. Given a set of names, order that set first by last name, then by any given names the person may have. A name must have at least 1 given name and may have up to 3 given names.
+- problem domain is deliberately simple
+- our goal is not to see you implement a trivial sorting algroithm
+- [ ] how your code communicates it's purpose clearly and with empathy to your potential team members.
+- [ ] Caring about how easy your code is to understand and navigate for the next engineer who touches it.
+- [ ] Understand your ability to compose quality code that adheres to SOLID principles
+  - [ ] Single Responsibility Principle
+  - [ ] Open/Close Principle
+  - [ ] Liskov Substitution Principle
+  - [ ] Interface Segregation Principle
+  - [ ] Dependency Inversion Principle
+- [ ] to see how you write tests.
+- [ ] best effort
+- [ ] a solution that you are proud of
 
-Example Usage
+### Problem Specification
+
+- [ ] The Goal: Name Sorter
+- [ ] Given a set of names
+- [ ] order that set first by last name
+- [ ] then by any given names the person may have
+- [ ] A name must have at least 1 given name
+- [ ] A name may have up to 3 given names.
+
+### Example Usage
 
 Given a a file called unsorted-names-list.txt containing the following list of names;
 
+```fundamental
 Janet Parsons
 Vaughn Lewis
 Adonis Julius Archer
@@ -81,11 +104,17 @@ Leo Gardner
 Hunter Uriah Mathew Clarke
 Mikayla Lopez
 Frankie Conner Ritter
+```
 
 Executing the program in the following way;
+
+```sh
 name-sorter ./unsorted-names-list.txt
+```
+
 Should result the sorted names to screen;
 
+```fundamental
 Marin Alvarez
 Adonis Julius Archer
 Beau Tristan Bentley
@@ -97,22 +126,18 @@ Mikayla Lopez
 Janet Parsons
 Frankie Conner Ritter
 Shelby Nathan Yoder
+```
 
-and a file in the working directory called sorted-names-list.txt containing the sorted names.
+- [ ] and create a file in the working directory called ```sorted-names-list.txt``` containing the sorted names.
 
-Assessment Criteria
+### Assessment Criteria
 
-We will execute your submission against a list with a thousand names.
-Your submission must meet the following criteria.
-The solution should be available for review on github.
-The names should be sorted correctly.
-It should print the sorted list of names to screen.
-It should write/overwrite the sorted list of names to a file called sorted-names-list.txt.
-Unit tests should exist.
-Minimal, practical documentation should exist.
-
-Awesome, but not essential criteria
-
-Create a build pipeline like Travis or AppVeyor that execute build and test steps.
-Submission
-When you are done let us know the url of the repo.
+- [ ] We will execute your submission against a list with a thousand names.
+- [x] The solution should be available for review on github.
+- [ ] The names should be sorted correctly.
+- [ ] It should print the sorted list of names to screen.
+- [ ] It should write/overwrite the sorted list of names to a file called sorted-names-list.txt.
+- [ ] Unit tests should exist.
+- [ ] Minimal, practical documentation should exist.
+- [ ] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
+- [ ] When you are done let us know the url of the repo.
