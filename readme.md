@@ -10,11 +10,12 @@ I have chosen to use Semaphore for my CI service primarily as it is what I'm mos
 
 # plan
 
-- [ ] init repo
-- [ ] review GlobalX github repos for style/practices/project layout/etc
+- [x] init repo
+- [x] review GlobalX github repos for style/practices/project layout/etc
 - [ ] review challenge
-- [ ] initialise project and CI
-- [ ] initialise documentation
+- [ ] initialise project
+- [ ] setup CI
+- [ ] initialise documentation & wiki
 - [ ] initialise code metrics
 - [ ] test program with no input
 - [ ] test program with simple inputs
@@ -23,6 +24,36 @@ I have chosen to use Semaphore for my CI service primarily as it is what I'm mos
 - [ ] review submission (style, documentation, presentation, CI/CD?)
 
 
+
+# GlobalX source code review observations
+
+Observations from reviewing GlobalX public repositories on GitHub. They are presented in approximate order I expect to emulate the good examples:
+
+- [ ] mit / apache licence
+- [ ] top level Project & Project.Tests convention
+- [ ] include guides (user/dev)
+- [ ] setup wiki
+- [ ] include examples / demos / samples
+- [ ] newbe/hackathon/low-hanging-fruit planning :D
+- [ ] unit, integration, stress tests and test helpers as separate (linked) projects
+- [ ] CONTRIBUTING.md
+
+- [ ] mostly long and descriptive naming
+- [ ] self documenting... comments usually explain "why" or "why not the usual/expected way"
+- [ ] model / view separation
+- [ ] validation and verbose error reporting
+- [ ] functional (foreach) style at times
+- [ ] nice .gitattributes
+- [ ] Fody NullGuard - investigate if time allows
+- [ ] honest about defects
+
+Other observations not strictly relevant in no particular order:
+
+- strict js :D
+- material gui
+- some old issues... mostly new
+- some terse abbreviations in naming - only one code base
+- ```if (object) { one liner }``` used often - only one code base
 
 # The Challenge
 
