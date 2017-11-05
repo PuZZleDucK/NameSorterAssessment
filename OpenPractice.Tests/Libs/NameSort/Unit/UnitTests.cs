@@ -40,6 +40,12 @@ namespace Unit
             Assert.Equal("Zoro", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 
+        [Fact]
+        public void GivenSortedNamesReturnsNames()
+        {
+            string[] nobody = {"Batman", "Robyn"};
+            Assert.Equal("Batman Robyn", String.Join(" ", _nameSorter.SortNames(nobody)));
+        }
 
     }
 }
