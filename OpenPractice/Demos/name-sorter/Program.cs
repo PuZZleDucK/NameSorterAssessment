@@ -9,7 +9,7 @@ namespace name_sorter
         {
           if(args.Length == 0)
           {
-            NameSorter.DisplayHelp();
+            NameSorter.ProgramUsageText();
           }
         }
     }
