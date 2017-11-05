@@ -32,11 +32,11 @@ The following sections consist of my personal notes for the project. They are in
 - [x] initialise project
 - [x] setup CI
 - [x] initialise documentation & wiki
-- [ ] initialise code metrics
-- [ ] test program with no input
+- [ ] test program with no input - usage information
 - [ ] test program with simple inputs
 - [ ] test advanced inputs
 - [ ] add alternative CI platforms/providers
+- [ ] code metrics
 - [ ] add release candidate
 - [ ] review submission (style, documentation, presentation, CI/CD?)
 

@@ -4,7 +4,7 @@ namespace NameSort
 {
     public class NameSorter
     {
-      public void DisplayHelp()
+      public static void DisplayHelp()
       {
         throw new NotImplementedException("TDD");
       }

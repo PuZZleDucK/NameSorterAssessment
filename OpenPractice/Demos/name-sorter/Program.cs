@@ -1,4 +1,5 @@
 ﻿using System;
+using NameSort;
 
 namespace name_sorter
 {
@@ -6,7 +7,10 @@ namespace name_sorter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Sorting");
+          if(args.Length == 0)
+          {
+            NameSorter.DisplayHelp();
+          }
         }
     }
 }
