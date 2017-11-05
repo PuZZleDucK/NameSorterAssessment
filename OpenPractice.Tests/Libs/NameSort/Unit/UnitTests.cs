@@ -41,18 +41,39 @@ namespace Unit
         }
 
         [Fact]
-        public void GivenSortedNamesReturnsNames()
+        public void GivenSortedSimpleNamesReturnsNames()
         {
             string[] nobody = { "Batman", "Robyn" };
             Assert.Equal("Batman Robyn", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 
         [Fact]
-        public void GivenReversedNamesReturnsSortedNames()
+        public void GivenReversedSimpleNamesReturnsSortedNames()
         {
             string[] nobody = { "Simon", "Garfunkel" };
             Assert.Equal("Garfunkel Simon", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
+
+        [Fact]
+        public void GivenNameReturnsName()
+        {
+            string[] nobody = { "Richard Stallman" };
+            Assert.Equal("Richard Stallman", String.Join("_", _nameSorter.SortNames(nobody)));
+        }
+
+        [Fact]
+        public void GivenSortedNamesReturnsNames()
+        {
+            string[] nobody = { "Richard Stallman", "Linus Torvalds" };
+            Assert.Equal("Richard Stallman_Linus Torvalds", String.Join("_", _nameSorter.SortNames(nobody)));
+        }
+
+        // [Fact]
+        // public void GivenReversedNamesReturnsSortedNames()
+        // {
+        //     string[] nobody = { "Simon", "Garfunkel" };
+        //     Assert.Equal("Garfunkel Simon", String.Join("_", _nameSorter.SortNames(nobody)));
+        // }
 
 
     }

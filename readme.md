@@ -39,10 +39,11 @@ The following sections consist of my personal notes for the project. They are in
 - [x] initialise documentation & wiki
 - [x] test program with no input - usage information
 - [x] add simple sample data
-- [ ] test program with simple inputs
-- [ ] add advanced sample data
+- [x] test program with simple inputs
 - [ ] test advanced inputs
+- [ ] test mixed simple/advanced inputs
 - [ ] add cli interface
+- [ ] add advanced sample data
 - [ ] test examples on cli in integration
 - [ ] add alternative CI platforms/providers
 - [ ] code metrics
