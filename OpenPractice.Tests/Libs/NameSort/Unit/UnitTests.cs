@@ -32,5 +32,14 @@ namespace Unit
             string[] nobody = new string[0];
             Assert.Equal("", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
+
+        [Fact]
+        public void GivenSingleNameReturnsName()
+        {
+            string[] nobody = {"Zoro"};
+            Assert.Equal("Zoro", String.Join(" ", _nameSorter.SortNames(nobody)));
+        }
+
+
     }
 }
