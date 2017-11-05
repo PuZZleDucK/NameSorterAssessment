@@ -6,7 +6,7 @@ namespace NameSort
     {
       public static string ProgramUsageText()
       {
-        throw new NotImplementedException("TDD");
+        return $"usage information:\n {System.AppDomain.CurrentDomain.FriendlyName} <list-to-be-sorted>";
       }
     }
 }

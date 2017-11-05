@@ -20,9 +20,9 @@ namespace Unit
         }
 
         [Fact]
-        public void UsageInformation()
+        public void MinimalUsageInformation()
         {
-            Assert.Matches(@"\usage information\", NameSorter.ProgramUsageText());
+            Assert.Matches("usage information", NameSorter.ProgramUsageText());
         }
     }
 }
