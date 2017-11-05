@@ -1,6 +1,7 @@
 using Xunit;
 using NameSort;
 using System.Text.RegularExpressions;
+using System;
 
 namespace Unit
 {
@@ -29,7 +30,7 @@ namespace Unit
         public void GivenNothingReturnsNothing()
         {
             string[] nobody = new string[0];
-            Assert.Equal("", _nameSorter.SortNames(nobody));
+            Assert.Equal("", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
     }
 }
