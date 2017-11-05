@@ -7,6 +7,7 @@ namespace name_sorter
     {
         static void Main(string[] args)
         {
+          System.Console.WriteLine("NameSorter");
           if(args.Length == 0)
           {
             NameSorter.ProgramUsageText();
