@@ -24,5 +24,12 @@ namespace Unit
         {
             Assert.Matches("usage information", NameSorter.ProgramUsageText());
         }
+
+        [Fact]
+        public void GivenNothingReturnsNothing()
+        {
+            string[] nobody = new string[0];
+            Assert.Equal("", _nameSorter.SortNames(nobody));
+        }
     }
 }
