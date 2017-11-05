@@ -47,5 +47,13 @@ namespace Unit
             Assert.Equal("Batman Robyn", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 
+        [Fact]
+        public void GivenReversedNamesReturnsSortedNames()
+        {
+            string[] nobody = {"Simon", "Garfunkel"};
+            Assert.Equal("Garfunkel Simon", String.Join(" ", _nameSorter.SortNames(nobody)));
+        }
+
+
     }
 }
