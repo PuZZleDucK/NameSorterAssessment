@@ -8,6 +8,7 @@ I have developed the project on Ubuntu 17.10 and tested it in CI on Ubuntu 14.04
 
 I have chosen to use Semaphore for my CI service primarily as it is what I'm most familiar with. An added bonus was that it is not a "supported by default" platform on Semaphore so I got to learn how to set it up from scratch. Alternative providers would also be a bonus.
 
+
 ## Getting the "Open Practice" project
 
 ```sh
@@ -160,3 +161,7 @@ Shelby Nathan Yoder
 - [ ] Minimal, practical documentation should exist.
 - [x] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
 - [ ] When you are done let us know the url of the repo.
+
+![](https://pbs.twimg.com/media/CyjIC1aUAAAjfCy?format=jpg&name=small)
+
+By the way that's me with Uncle Bob! :D

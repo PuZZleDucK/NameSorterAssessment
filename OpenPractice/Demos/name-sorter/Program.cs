@@ -10,7 +10,7 @@ namespace name_sorter
           System.Console.WriteLine("NameSorter");
           if(args.Length == 0)
           {
-            NameSorter.ProgramUsageText();
+            System.Console.WriteLine(NameSorter.ProgramUsageText());
           }
         }
     }
