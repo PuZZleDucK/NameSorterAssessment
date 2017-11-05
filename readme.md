@@ -25,7 +25,7 @@ The following sections consist of my personal notes for the project. They are in
 - We want the program to give a best-effort if the list contains invalid names (name not in output, warning printed to console (as it occurs and summary at end), possible err-out.txt list?)
 - Including the library in a mock "OpenPractice" project means that the the main readme.md and other files referring to the library are in the wrong place and should be in the Libs directory and will have to be reffered to in the new OpenPractice readme.md
 - The way the fail count is detected in CI is not ideal. If an error were to emmit the string "Failed: 0" as part of the error message this could fool the CI into thinking all is ok :(
-
+- Could a name not have a last-name and only have a first-name. My assumption was a yes.
 
 ## The Plan
 
@@ -36,7 +36,9 @@ The following sections consist of my personal notes for the project. They are in
 - [x] setup CI
 - [x] initialise documentation & wiki
 - [x] test program with no input - usage information
+- [x] add simple sample data
 - [ ] test program with simple inputs
+- [ ] add advanced sample data
 - [ ] test advanced inputs
 - [ ] add alternative CI platforms/providers
 - [ ] code metrics
