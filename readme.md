@@ -40,8 +40,8 @@ The following sections consist of my personal notes for the project. They are in
 - [x] test program with no input - usage information
 - [x] add simple sample data
 - [x] test program with simple inputs
-- [ ] test advanced inputs
-- [ ] test mixed simple/advanced inputs
+- [x] test advanced inputs
+- [x] test mixed simple/advanced inputs
 - [ ] add cli interface
 - [ ] add advanced sample data
 - [ ] test examples on cli in integration
@@ -105,16 +105,16 @@ Below is a collection of notes and check points I intend to cover that has been 
   - [ ] Dependency Inversion Principle
 - [ ] to see how you write tests.
 - [ ] best effort
-- [ ] a solution that you are proud of
+- [x] a solution that you are proud of
 
 ### Problem Specification
 
 - [ ] The Goal: Name Sorter
 - [ ] Given a set of names
-- [ ] order that set first by last name
-- [ ] then by any given names the person may have
+- [x] order that set first by last name
+- [x] then by any given names the person may have
 - [ ] A name must have at least 1 given name
-- [ ] A name may have up to 3 given names (what should I do for lists with invalid names?)
+- [x] A name may have up to 3 given names (what should I do for lists with invalid names?)
 
 ### Example Usage
 
