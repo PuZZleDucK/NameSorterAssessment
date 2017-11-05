@@ -36,21 +36,21 @@ namespace Unit
         [Fact]
         public void GivenSingleNameReturnsName()
         {
-            string[] nobody = {"Zoro"};
+            string[] nobody = { "Zoro" };
             Assert.Equal("Zoro", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 
         [Fact]
         public void GivenSortedNamesReturnsNames()
         {
-            string[] nobody = {"Batman", "Robyn"};
+            string[] nobody = { "Batman", "Robyn" };
             Assert.Equal("Batman Robyn", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 
         [Fact]
         public void GivenReversedNamesReturnsSortedNames()
         {
-            string[] nobody = {"Simon", "Garfunkel"};
+            string[] nobody = { "Simon", "Garfunkel" };
             Assert.Equal("Garfunkel Simon", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 
