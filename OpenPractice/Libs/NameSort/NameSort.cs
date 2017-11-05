@@ -12,7 +12,18 @@ namespace NameSort
 
         public string[] SortNames(string[] unsorted_names)
         {
-            return unsorted_names.OrderBy(name => name).ToArray(); ;
+            return unsorted_names.OrderBy(name =>
+            {
+                string[] persons_names = name.Split(' ');
+                if(persons_names.Length > 4)
+                {
+                  // ERR out here... invalid name
+                  System.Console.WriteLine($"Malformed name detected: {persons_names}");
+                }
+                string last_name = persons_names.Last();
+                string other_names = String.Join(" ", persons_names.Take(persons_names.Length - 1).ToArray());
+                return last_name + " " + other_names;
+            }).ToArray(); ;
         }
     }
 }

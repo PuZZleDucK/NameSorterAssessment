@@ -46,6 +46,7 @@ The following sections consist of my personal notes for the project. They are in
 - [ ] add advanced sample data
 - [ ] test examples on cli in integration
 - [ ] add alternative CI platforms/providers
+- [ ] better erroring on invalid names
 - [ ] code metrics
 - [ ] add release candidate
 - [ ] review submission (style, documentation, presentation, CI/CD?)
