@@ -53,8 +53,8 @@ namespace Integration
         [Theory]
         [InlineData("01-empty-file")]
         [InlineData("02-single-first-name-only")]
-        // [InlineData("03-single-full-name")]
-        // [InlineData("04-two-names-in-order")]
+        [InlineData("03-single-full-name")]
+        [InlineData("04-two-names-in-order")]
         // [InlineData("05-two-names-reversed")]
         // [InlineData("06-provided-example")]
         public void ProgramProcessesExampleFiles(string example_file)
@@ -64,7 +64,7 @@ namespace Integration
             _name_sorter.Start();
             string console_output = _name_sorter.StandardOutput.ReadToEnd();
             _name_sorter.WaitForExit();
-            Assert.Equal(String.Join(" -> ", expected_output)+"\n", String.Join(" -> ", console_output));
+            Assert.Equal(String.Join("\n", expected_output), console_output);
             Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
             string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
             Assert.Equal(String.Join(" -> ", expected_output), String.Join(" -> ", output_file_lines));
