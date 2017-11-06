@@ -1,0 +1,289 @@
+Matei ZahariaMark Zuckerberg
+Philip Zimmermann
+Jamie Zawinski
+Victor Yngve
+Jerry Yang
+Will Wright
+Steve Wozniak
+Don Woods
+Stephen Wolfram
+Niklaus Wirth
+Dave Winer
+Sophie Wilson
+Roberta and Ken Williams
+Evan Williams
+Bruce Wilcox
+Arthur Whitney
+David Wheeler
+Jim Weirich
+Peter J. Weinberger
+Pei-Yuan Wei
+Robert Watson
+Joseph Weizenbaum
+John Warnock
+John Walker
+Bob Wallace
+Larry Wall
+Patrick Volkerding
+Paul Vixie
+Pat Villani
+Wietse Venema
+Alan Turing
+Bob Truel
+Roy Trubshaw
+Andrew Tridgell
+Linus Torvalds
+Michael Tiemann
+Ken Thompson
+Avie Tevanian
+Jon Stephenson von Tetzchner
+Larry Tesler
+Simon Tatham
+Audrey "Autrijus" Tang
+Andrew Tanenbaum
+Amir Taaki
+Tim Sweeney
+Gottfrid Svartholm
+Herb Sutter
+Gerald Jay Sussman
+Zeev Suraski
+Bjarne Stroustrup
+Ludvig Strigeus
+Christopher Strachey
+Alexander Stepanov
+Guy Steele
+Richard Stallman
+Quentin Stafford-Fraser
+Joel Spolsky
+Henry Spencer
+Matthew Smith
+Rich Skrenta
+Colin Simpson
+Charles Simonyi
+Ken Silverman
+Jacek Sieka
+Emily Short
+Zed Shaw
+Cliff Shaw
+Mike Shaver
+Adi Shamir
+Randal L. Schwartz
+Aaron Swartz
+Bill Schelter
+Bob Scheifler
+Chris Sawyer
+Carl Sassenrath
+Muni Sakya
+Bob Sabiston
+Mark Russinovich
+Steve Russell
+Rusty Russell
+Jeff Rulifson
+Guido van Rossum
+Blake Ross
+John Romero
+Ron Rivest
+Dennis Ritchie
+Craig Reynolds
+John Resig
+Hans Reiser
+Eric Raymond
+Jef Raskin
+Theo de Raadt
+Kent Pitman
+Rob Pike
+Charles Petzold
+Jeffrey Peterson
+Petr Mitrichev
+Markus Persson
+Tim Paterson
+Seymour Papert
+Alexey Pajitnov
+Larry Page
+Keith Packard
+John Ousterhout
+Andrew and Philip Oliver
+Jarkko Oikarinen
+Martin Odersky
+Ed Oates
+Kristen Nygaard
+Peter Norton
+Klara Dan von Neumann
+Graham Nelson
+Fredrik Neij
+Peter Naur
+Patrick Naughton
+Mike Muuss
+Boyd Munro
+Matt Mullenweg
+Roger Moore
+Charles H. Moore
+David A. Moon
+Bram Moolenaar
+Lou Montulli
+Cleve Moler
+Jeff Minter
+Bob Miner
+Scott Meyers
+Bertrand Meyer
+Sid Meier
+Marshall Kirk McKusick
+Shawn McKenzie
+Douglas McIlroy
+Daniel D. McCracken
+Craig McClanahan
+John McCarthy
+Yukihiro Matsumoto
+John Mashey
+Robert Cecil Martin
+Khaled Mardam-Bey
+Hans Peter Luhn
+Al Lowe
+Ada Lovelace
+Robert Love
+Håkon Wium Lie
+Gordon Letwin
+Michael Lesk
+Rasmus Lerdorf
+Samuel J Leffler
+Chris Lattner
+Dick Lathwell
+Sam Lantinga
+Butler Lampson
+Leslie Lamport
+Tom Lane
+Andre LaMothe
+Andrew R. Koenig
+Donald E. Knuth
+Jim Knopf
+Tom Knight
+Gary Kildall
+Brian Kernighan
+Stan Kelly-Bootle
+John Kemeny
+Mel Kaye
+Alan Kay
+Phil Katz
+Mitch Kapor
+Poul-Henning Kamp
+Robert K. Jung
+Bill Joy
+Stephen C. Johnson
+William Jolitz
+Lynne Jolitz
+Paul Jardetzky
+Bo Jangeborg
+Toru Iwatani
+Ken Iverson
+Geir Ivarsøy
+Dan Ingalls
+Roberto Ierusalimschy
+Miguel de Icaza
+Dave Hyatt
+Grace Hopper
+C. A. R. Hoare
+D. Richard Hipp
+Andy Hertzfeld
+Ted Henter
+Anders Hejlsberg
+Rebecca Heineman
+David Albert Huffman
+David Heinemeier Hansson
+Margaret Hamilton
+Jim Hall
+Daniel Ha
+Andi Gutmans
+Scott Guthrie
+Neil J. Gunther
+Richard Greenblatt
+Ralph Griswold
+John Graham-Cumming
+Paul Graham
+Paul Gower
+Andrew Gower
+Bill Gosper
+James Gosling
+Ryan C. Gordon
+Adele Goldberg
+John Gilmore
+Steve Gibson
+Jim Gettys
+Bill Gates
+Elon Gasper
+Jim Fruchterman
+Martin Fowler
+Brian Fox
+Andrew Fluegelman
+Brad Fitzpatrick
+David Filo
+Stuart Feldman
+Steve Fawkner
+Dan Farmer
+Scott Fahlman
+Marc Ewing
+Larry Ellison
+Brendan Eich
+Les Earnest
+Adam Dunkels
+Martin Dougiamas
+Jack Dorsey
+Matt Dillon
+Edsger Dijkstra
+L. Peter Deutsch
+Jeff Dean
+James Duncan Davidson
+Ole-Johan Dahl
+Dave Cutler
+William Crowther
+Ward Cunningham
+Mark Crispin
+Mike Cowlishaw
+Brad Cox
+Alan Cox
+Alan Cooper
+Alain Colmerauer
+Bram Cohen
+Edgar F. Codd
+Ward Christensen
+Vinton Cerf
+John Carmack
+Steve Capps
+Dries Buytaert
+Dani Bunten
+Andries Brouwer
+Richard Brodie
+Sergey Brin
+Walter Bright
+Dan Bricklin
+Jack E. Bresenham
+Larry Breed
+Andrew Braybrook
+David Bradley
+Stephen Richard Bourne
+Bert Bos
+Grady Booch
+Jonathan Blow
+Joshua Bloch
+Marc Blank
+Eric Bina
+Sabeer Bhatia
+Daniel J. Bernstein
+Tim Berners-Lee
+Fabrice Bellard
+Doug Bell
+Donald Becker
+Kent Beck
+Brian Behlendorf
+Richard Bartle
+Lars Bak
+John Backus
+Bill Atkinson
+Jeremy Ashkenas
+Marc Andreessen
+Eric Allman
+Paul Allen
+Andrei Alexandrescu
+Alfred Aho
+Leonard Adleman
+Scott Adams
+Michael Abrash

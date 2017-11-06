@@ -1,0 +1,290 @@
+Michael Abrash
+Scott Adams
+Leonard Adleman
+Alfred Aho
+Andrei Alexandrescu
+Paul Allen
+Eric Allman
+Marc Andreessen
+Jeremy Ashkenas
+Bill Atkinson
+John Backus
+Lars Bak
+Richard Bartle
+Brian Behlendorf
+Kent Beck
+Donald Becker
+Doug Bell
+Fabrice Bellard
+Tim Berners-Lee
+Daniel J. Bernstein
+Sabeer Bhatia
+Eric Bina
+Marc Blank
+Joshua Bloch
+Jonathan Blow
+Grady Booch
+Bert Bos
+Stephen Richard Bourne
+David Bradley
+Andrew Braybrook
+Larry Breed
+Jack E. Bresenham
+Dan Bricklin
+Walter Bright
+Sergey Brin
+Richard Brodie
+Andries Brouwer
+Dani Bunten
+Dries Buytaert
+Steve Capps
+John Carmack
+Vinton Cerf
+Ward Christensen
+Edgar F. Codd
+Bram Cohen
+Alain Colmerauer
+Alan Cooper
+Alan Cox
+Brad Cox
+Mike Cowlishaw
+Mark Crispin
+Ward Cunningham
+William Crowther
+Dave Cutler
+Ole-Johan Dahl
+James Duncan Davidson
+Jeff Dean
+L. Peter Deutsch
+Edsger Dijkstra
+Matt Dillon
+Jack Dorsey
+Martin Dougiamas
+Adam Dunkels
+Les Earnest
+Brendan Eich
+Larry Ellison
+Marc Ewing
+Scott Fahlman
+Dan Farmer
+Steve Fawkner
+Stuart Feldman
+David Filo
+Brad Fitzpatrick
+Andrew Fluegelman
+Brian Fox
+Martin Fowler
+Jim Fruchterman
+Elon Gasper
+Bill Gates
+Jim Gettys
+Steve Gibson
+John Gilmore
+Adele Goldberg
+Ryan C. Gordon
+James Gosling
+Bill Gosper
+Andrew Gower
+Paul Gower
+Paul Graham
+John Graham-Cumming
+Ralph Griswold
+Richard Greenblatt
+Neil J. Gunther
+Scott Guthrie
+Andi Gutmans
+Daniel Ha
+Jim Hall
+Margaret Hamilton
+David Heinemeier Hansson
+David Albert Huffman
+Rebecca Heineman
+Anders Hejlsberg
+Ted Henter
+Andy Hertzfeld
+D. Richard Hipp
+C. A. R. Hoare
+Grace Hopper
+Dave Hyatt
+Miguel de Icaza
+Roberto Ierusalimschy
+Dan Ingalls
+Geir Ivarsøy
+Ken Iverson
+Toru Iwatani
+Bo Jangeborg
+Paul Jardetzky
+Lynne Jolitz
+William Jolitz
+Stephen C. Johnson
+Bill Joy
+Robert K. Jung
+Poul-Henning Kamp
+Mitch Kapor
+Phil Katz
+Alan Kay
+Mel Kaye
+John Kemeny
+Stan Kelly-Bootle
+Brian Kernighan
+Gary Kildall
+Tom Knight
+Jim Knopf
+Donald E. Knuth
+Andrew R. Koenig
+Andre LaMothe
+Tom Lane
+Leslie Lamport
+Butler Lampson
+Sam Lantinga
+Dick Lathwell
+Chris Lattner
+Samuel J Leffler
+Rasmus Lerdorf
+Michael Lesk
+Gordon Letwin
+Håkon Wium Lie
+Robert Love
+Ada Lovelace
+Al Lowe
+Hans Peter Luhn
+Khaled Mardam-Bey
+Robert Cecil Martin
+John Mashey
+Yukihiro Matsumoto
+John McCarthy
+Craig McClanahan
+Daniel D. McCracken
+Douglas McIlroy
+Shawn McKenzie
+Marshall Kirk McKusick
+Sid Meier
+Bertrand Meyer
+Scott Meyers
+Bob Miner
+Jeff Minter
+Cleve Moler
+Lou Montulli
+Bram Moolenaar
+David A. Moon
+Charles H. Moore
+Roger Moore
+Matt Mullenweg
+Boyd Munro
+Mike Muuss
+Patrick Naughton
+Peter Naur
+Fredrik Neij
+Graham Nelson
+Klara Dan von Neumann
+Peter Norton
+Kristen Nygaard
+Ed Oates
+Martin Odersky
+Jarkko Oikarinen
+Andrew and Philip Oliver
+John Ousterhout
+Keith Packard
+Larry Page
+Alexey Pajitnov
+Seymour Papert
+Tim Paterson
+Markus Persson
+Petr Mitrichev
+Jeffrey Peterson
+Charles Petzold
+Rob Pike
+Kent Pitman
+Theo de Raadt
+Jef Raskin
+Eric Raymond
+Hans Reiser
+John Resig
+Craig Reynolds
+Dennis Ritchie
+Ron Rivest
+John Romero
+Blake Ross
+Guido van Rossum
+Jeff Rulifson
+Rusty Russell
+Steve Russell
+Mark Russinovich
+Bob Sabiston
+Muni Sakya
+Carl Sassenrath
+Chris Sawyer
+Bob Scheifler
+Bill Schelter
+Aaron Swartz
+Randal L. Schwartz
+Adi Shamir
+Mike Shaver
+Cliff Shaw
+Zed Shaw
+Emily Short
+Jacek Sieka
+Ken Silverman
+Charles Simonyi
+Colin Simpson
+Rich Skrenta
+Matthew Smith
+Henry Spencer
+Joel Spolsky
+Quentin Stafford-Fraser
+Richard Stallman
+Guy Steele
+Alexander Stepanov
+Christopher Strachey
+Ludvig Strigeus
+Bjarne Stroustrup
+Zeev Suraski
+Gerald Jay Sussman
+Herb Sutter
+Gottfrid Svartholm
+Tim Sweeney
+Amir Taaki
+Andrew Tanenbaum
+Audrey "Autrijus" Tang
+Simon Tatham
+Larry Tesler
+Jon Stephenson von Tetzchner
+Avie Tevanian
+Ken Thompson
+Michael Tiemann
+Linus Torvalds
+Andrew Tridgell
+Roy Trubshaw
+Bob Truel
+Alan Turing
+Wietse Venema
+Pat Villani
+Paul Vixie
+Patrick Volkerding
+Larry Wall
+Bob Wallace
+John Walker
+John Warnock
+Joseph Weizenbaum
+Robert Watson
+Pei-Yuan Wei
+Peter J. Weinberger
+Jim Weirich
+David Wheeler
+Arthur Whitney
+Bruce Wilcox
+Evan Williams
+Roberta and Ken Williams
+Sophie Wilson
+Dave Winer
+Niklaus Wirth
+Stephen Wolfram
+Don Woods
+Steve Wozniak
+Will Wright
+Jerry Yang
+Victor Yngve
+Jamie Zawinski
+Philip Zimmermann
+Mark Zuckerberg
+Matei Zaharia

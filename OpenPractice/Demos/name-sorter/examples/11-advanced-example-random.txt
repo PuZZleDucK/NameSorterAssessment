@@ -1,0 +1,290 @@
+Zeev Suraski
+Zed Shaw
+Yukihiro Matsumoto
+Will Wright
+William Jolitz
+William Crowther
+Wietse Venema
+Ward Cunningham
+Ward Christensen
+Walter Bright
+Vinton Cerf
+Victor Yngve
+Toru Iwatani
+Tom Lane
+Tom Knight
+Tim Sweeney
+Tim Paterson
+Tim Berners-Lee
+Theo de Raadt
+Ted Henter
+Stuart Feldman
+Steve Wozniak
+Steve Russell
+Steve Gibson
+Steve Fawkner
+Steve Capps
+Stephen Wolfram
+Stephen Richard Bourne
+Stephen C. Johnson
+Stan Kelly-Bootle
+Sophie Wilson
+Simon Tatham
+Sid Meier
+Shawn McKenzie
+Seymour Papert
+Sergey Brin
+Scott Meyers
+Scott Guthrie
+Scott Fahlman
+Scott Adams
+Samuel J Leffler
+Sam Lantinga
+Sabeer Bhatia
+Ryan C. Gordon
+Rusty Russell
+Roy Trubshaw
+Ron Rivest
+Roger Moore
+Rob Pike
+Robert Watson
+Roberto Ierusalimschy
+Robert Love
+Robert K. Jung
+Robert Cecil Martin
+Roberta and Ken Williams
+Rich Skrenta
+Richard Stallman
+Richard Greenblatt
+Richard Brodie
+Richard Bartle
+Rebecca Heineman
+Rasmus Lerdorf
+Randal L. Schwartz
+Ralph Griswold
+Quentin Stafford-Fraser
+Poul-Henning Kamp
+Phil Katz
+Philip Zimmermann
+Petr Mitrichev
+Peter Norton
+Peter Naur
+Peter J. Weinberger
+Pei-Yuan Wei
+Paul Vixie
+Paul Jardetzky
+Paul Graham
+Paul Gower
+Paul Allen
+Pat Villani
+Patrick Volkerding
+Patrick Naughton
+Ole-Johan Dahl
+Niklaus Wirth
+Neil J. Gunther
+Muni Sakya
+Mitch Kapor
+Mike Shaver
+Mike Muuss
+Mike Cowlishaw
+Miguel de Icaza
+Michael Tiemann
+Michael Lesk
+Michael Abrash
+Mel Kaye
+Matt Mullenweg
+Matthew Smith
+Matt Dillon
+Matei Zaharia
+Martin Odersky
+Martin Fowler
+Martin Dougiamas
+Marshall Kirk McKusick
+Mark Zuckerberg
+Markus Persson
+Mark Russinovich
+Mark Crispin
+Margaret Hamilton
+Marc Ewing
+Marc Blank
+Marc Andreessen
+Lynne Jolitz
+Ludvig Strigeus
+L. Peter Deutsch
+Lou Montulli
+Linus Torvalds
+Leslie Lamport
+Les Earnest
+Leonard Adleman
+Lars Bak
+Larry Wall
+Larry Tesler
+Larry Page
+Larry Ellison
+Larry Breed
+Kristen Nygaard
+Klara Dan von Neumann
+Khaled Mardam-Bey
+Kent Pitman
+Ken Thompson
+Kent Beck
+Ken Silverman
+Ken Iverson
+Keith Packard
+Joshua Bloch
+Joseph Weizenbaum
+Jon Stephenson von Tetzchner
+Jonathan Blow
+John Warnock
+John Walker
+John Romero
+John Resig
+John Ousterhout
+John McCarthy
+John Mashey
+John Kemeny
+John Graham-Cumming
+John Gilmore
+John Carmack
+John Backus
+Joel Spolsky
+Jim Weirich
+Jim Knopf
+Jim Hall
+Jim Gettys
+Jim Fruchterman
+Jerry Yang
+Jeremy Ashkenas
+Jef Raskin
+Jeff Rulifson
+Jeffrey Peterson
+Jeff Minter
+Jeff Dean
+Jarkko Oikarinen
+Jamie Zawinski
+James Gosling
+James Duncan Davidson
+Jack E. Bresenham
+Jack Dorsey
+Jacek Sieka
+Herb Sutter
+Henry Spencer
+Hans Reiser
+Hans Peter Luhn
+Håkon Wium Lie
+Guy Steele
+Guido van Rossum
+Graham Nelson
+Grady Booch
+Grace Hopper
+Gottfrid Svartholm
+Gordon Letwin
+Gerald Jay Sussman
+Geir Ivarsøy
+Gary Kildall
+Fredrik Neij
+Fabrice Bellard
+Evan Williams
+Eric Raymond
+Eric Bina
+Eric Allman
+Emily Short
+Elon Gasper
+Edsger Dijkstra
+Ed Oates
+Edgar F. Codd
+Dries Buytaert
+D. Richard Hipp
+Douglas McIlroy
+Doug Bell
+Don Woods
+Donald E. Knuth
+Donald Becker
+Dick Lathwell
+Dennis Ritchie
+David Wheeler
+David Heinemeier Hansson
+David Filo
+David Bradley
+David A. Moon
+David Albert Huffman
+Dave Winer
+Dave Hyatt
+Dave Cutler
+Dan Ingalls
+Daniel J. Bernstein
+Daniel Ha
+Daniel D. McCracken
+Dani Bunten
+Dan Farmer
+Dan Bricklin
+Craig Reynolds
+Craig McClanahan
+Colin Simpson
+Cliff Shaw
+Cleve Moler
+Christopher Strachey
+Chris Sawyer
+Chris Lattner
+Charles Simonyi
+Charles Petzold
+Charles H. Moore
+Carl Sassenrath
+C. A. R. Hoare
+Butler Lampson
+Bruce Wilcox
+Brian Kernighan
+Brian Fox
+Brian Behlendorf
+Brendan Eich
+Bram Moolenaar
+Bram Cohen
+Brad Fitzpatrick
+Brad Cox
+Boyd Munro
+Bo Jangeborg
+Bob Wallace
+Bob Truel
+Bob Scheifler
+Bob Sabiston
+Bob Miner
+Blake Ross
+Bjarne Stroustrup
+Bill Schelter
+Bill Joy
+Bill Gosper
+Bill Gates
+Bill Atkinson
+Bertrand Meyer
+Bert Bos
+Avie Tevanian
+Audrey "Autrijus" Tang
+Arthur Whitney
+Andy Hertzfeld
+Andries Brouwer
+Andrew Tridgell
+Andrew Tanenbaum
+Andrew R. Koenig
+Andrew Gower
+Andrew Fluegelman
+Andrew Braybrook
+Andrew and Philip Oliver
+Andre LaMothe
+Andrei Alexandrescu
+Andi Gutmans
+Anders Hejlsberg
+Amir Taaki
+Al Lowe
+Alfred Aho
+Alexey Pajitnov
+Alexander Stepanov
+Alan Turing
+Alan Kay
+Alan Cox
+Alan Cooper
+Alain Colmerauer
+Adi Shamir
+Adele Goldberg
+Adam Dunkels
+Ada Lovelace
+Aaron Swartz
