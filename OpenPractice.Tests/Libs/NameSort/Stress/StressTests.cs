@@ -25,11 +25,18 @@ namespace Stress
         [Fact]
         public void NotSoStressful()
         {
-            _name_sorter.StartInfo.Arguments = "";
+            string[] blank_line = { "" };
+            System.IO.File.WriteAllLines(@"blank.txt", blank_line);
+            _name_sorter.StartInfo.Arguments = "blank.txt";
             _name_sorter.Start();
-            string output = _name_sorter.StandardOutput.ReadToEnd();
+            string console_output = _name_sorter.StandardOutput.ReadToEnd();
             _name_sorter.WaitForExit();
-            Assert.Equal("usage information", output);
+            Assert.Equal("\n", console_output);
+            Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
+            string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
+            Assert.Equal(blank_line, output_file_lines);
+            System.IO.File.Delete(@"blank.txt");
+            System.IO.File.Delete(@"sorted-names-list.txt");
         }
     }
 }
