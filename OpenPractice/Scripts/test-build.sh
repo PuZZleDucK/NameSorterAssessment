@@ -1,5 +1,7 @@
 #!/bin/bash
+set -o errexit
+set -o pipefail
 
-OUTPUT="$(dotnet test)" 
-echo "${OUTPUT}"
-echo "${OUTPUT}" | tr "\n" " "  | grep -e "Failed: 0.*Failed: 0*Failed: 0"  && true || false
+dotnet test OpenPractice.Tests/Libs/NameSort/Unit/
+dotnet test OpenPractice.Tests/Libs/NameSort/Integration/
+dotnet test OpenPractice.Tests/Libs/NameSort/Stress/
