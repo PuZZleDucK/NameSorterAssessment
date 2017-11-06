@@ -29,7 +29,7 @@ The following sections consist of my personal notes for the project. They are in
 - This last-name-could-be-null assumption causes an issue with where to sort a name with a single first-name and no last-name like "Teller" in a list where other entries have a last-name like "Raymond Joseph Teller". I have deided it makes most sense to list them in order at the top as the string "" seems to precede any other string
 - The problem description describes invoking the program like so: ```name-sorter ./unsorted-names-list.txt```. However dotnet core seems to (by design) not produce standalone executables in the interests of platform independence. I have created a short build script that converts the .dll file produced by dotnet into an executable usable on linux systems but have not tested if this works on windows or mac.
 - Performance limit on total file size (name count or length) in relation to machine memory. Difficult to overcome without overengineering (sort input into subcategories first, file buffering, etc)
-
+- NuGet going down can cause build and tests to fail :(
 
 ## The Plan
 

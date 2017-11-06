@@ -24,6 +24,12 @@ NameSort has a CI pipeline setup at Semaphore: https://semaphoreci.com/puzzleduc
 
 [![Build Status](https://semaphoreci.com/api/v1/puzzleduck/namesorterassessment/branches/master/badge.svg)](https://semaphoreci.com/puzzleduck/namesorterassessment)
 
+And Travis.ci
+
+[![Build Status](https://travis-ci.org/PuZZleDucK/NameSorterAssessment.svg?branch=master)](https://travis-ci.org/PuZZleDucK/NameSorterAssessment)
+
+
+
 
 ## Your first contribution
 
