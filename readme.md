@@ -28,6 +28,7 @@ The following sections consist of my personal notes for the project. They are in
 - Could a name not have a last-name and only have a first-name? My assumption was a yes
 - This last-name-could-be-null assumption causes an issue with where to sort a name with a single first-name and no last-name like "Teller" in a list where other entries have a last-name like "Raymond Joseph Teller". I have deided it makes most sense to list them in order at the top as the string "" seems to precede any other string
 - The problem description describes invoking the program like so: ```name-sorter ./unsorted-names-list.txt```. However dotnet core seems to (by design) not produce standalone executables in the interests of platform independence. I have created a short build script that converts the .dll file produced by dotnet into an executable usable on linux systems but have not tested if this works on windows or mac.
+- Performance limit on total file size (name count or length) in relation to machine memory. Difficult to overcome without overengineering (sort input into subcategories first, file buffering, etc)
 
 
 ## The Plan
@@ -47,7 +48,7 @@ The following sections consist of my personal notes for the project. They are in
 - [x] add cli interface
 - [x] add advanced sample data
 - [x] test examples on cli in integration
-- [ ] stress testing
+- [x] stress testing
 - [ ] add alternative CI platforms/providers
 - [ ] better erroring on invalid names
 - [ ] code metrics
@@ -67,10 +68,10 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] include examples /
 - [x] include demo
 - [x] include samples
-- [ ] newbe/hackathon/low-hanging-fruit planning (multiple file arguments, output file specification,...)
+- [ ] newbe/hackathon/low-hanging-fruit planning (multiple file arguments, output file specification, large files, ...)
 - [x] unit test project
 - [x] integration test project
-- [ ] stress tests project
+- [x] stress tests project
 
 - [ ] mostly long and descriptive naming
 - [ ] self documenting... comments usually explain "why" or "why not the usual/expected way"
@@ -121,7 +122,7 @@ Below is a collection of notes and check points I intend to cover that has been 
 
 ### Assessment Criteria
 
-- [ ] We will execute your submission against a list with a thousand names - minimal stress test
+- [x] We will execute your submission against a list with a thousand names - minimal stress test
 - [x] The solution should be available for review on github.
 - [x] The names should be sorted correctly.
 - [x] It should print the sorted list of names to screen.
