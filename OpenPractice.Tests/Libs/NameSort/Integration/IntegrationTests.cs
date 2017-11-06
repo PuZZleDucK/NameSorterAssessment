@@ -10,9 +10,7 @@ namespace Integration
 
         public IntegrationTests()
         {
-            // build is running for every example... remove and only run once
             if (_name_sorter == null) {
-                System.Console.WriteLine($".. :: BUILDING RELEASE :: ..");
                 System.Diagnostics.Process _name_sort_builder;
                 _name_sort_builder = new System.Diagnostics.Process();
                 _name_sort_builder.StartInfo.FileName = @"dotnet";
@@ -20,7 +18,6 @@ namespace Integration
                 _name_sort_builder.Start();
                 _name_sort_builder.WaitForExit();
             }
-
             _name_sorter = new System.Diagnostics.Process();
             _name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
             _name_sorter.StartInfo.RedirectStandardOutput = true;
@@ -56,16 +53,22 @@ namespace Integration
         [Theory]
         [InlineData("01-empty-file")]
         [InlineData("02-single-first-name-only")]
-        [InlineData("03-single-full-name")]
-        [InlineData("04-two-names-in-order")]
-        [InlineData("05-two-names-reversed")]
-        [InlineData("06-provided-example")]
+        // [InlineData("03-single-full-name")]
+        // [InlineData("04-two-names-in-order")]
+        // [InlineData("05-two-names-reversed")]
+        // [InlineData("06-provided-example")]
         public void ProgramProcessesExampleFiles(string example_file)
         {
             string[] expected_output = System.IO.File.ReadAllLines($"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}-expected-output.txt");
-            // append -expected-output for results
-            System.Console.WriteLine($":: example_file: {example_file}");
-            System.Console.WriteLine($"::    expected_output: {String.Join(" -> ", expected_output)}");
+            _name_sorter.StartInfo.Arguments = $"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}.txt";
+            _name_sorter.Start();
+            string console_output = _name_sorter.StandardOutput.ReadToEnd();
+            _name_sorter.WaitForExit();
+            Assert.Equal(String.Join(" -> ", expected_output), String.Join(" -> ", console_output));
+            Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
+            string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
+            Assert.Equal(String.Join(" -> ", expected_output), String.Join(" -> ", output_file_lines));
+            System.IO.File.Delete(@"sorted-names-list.txt");
         }
 
     }
