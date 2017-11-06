@@ -66,7 +66,7 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] include examples /
 - [x] include demo
 - [x] include samples
-- [ ] newbe/hackathon/low-hanging-fruit planning :D
+- [ ] newbe/hackathon/low-hanging-fruit planning (multiple file arguments, output file specification,...)
 - [x] unit test project
 - [x] integration test project
 - [ ] stress tests project
