@@ -5,40 +5,46 @@ namespace Integration
 {
     public class IntegrationTests
     {
+        private System.Diagnostics.Process _name_sorter;
+
+        public IntegrationTests()
+        {
+            System.Diagnostics.Process _name_sort_builder;
+            _name_sort_builder = new System.Diagnostics.Process();
+            _name_sort_builder.StartInfo.FileName = @"dotnet";
+            _name_sort_builder.StartInfo.Arguments = "publish -c Release -r ubuntu.14.04-x64 ../../../../../../../OpenPractice/Demos/name-sorter";
+            _name_sort_builder.Start();
+            _name_sort_builder.WaitForExit();
+
+            _name_sorter = new System.Diagnostics.Process();
+            _name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
+            _name_sorter.StartInfo.RedirectStandardOutput = true;
+        }
+
         [Fact]
         public void ProgramPrintsUsageWithoutArgs()
         {
-            System.Diagnostics.Process name_sorter_proc = new System.Diagnostics.Process();
-            name_sorter_proc.StartInfo.FileName = @"dotnet";
-            name_sorter_proc.StartInfo.Arguments = "run --project ../../../../../../../OpenPractice/Demos/name-sorter/";
-            // name_sorter_proc.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
-            name_sorter_proc.StartInfo.RedirectStandardOutput = true;
-            name_sorter_proc.Start();
-            string output = name_sorter_proc.StandardOutput.ReadToEnd();
-            name_sorter_proc.WaitForExit();
+            _name_sorter.StartInfo.Arguments = "";
+            _name_sorter.Start();
+            string output = _name_sorter.StandardOutput.ReadToEnd();
+            _name_sorter.WaitForExit();
             Assert.Matches("usage information", output);
         }
 
         [Fact]
         public void ProgramProcessesEmptyFile()
         {
-            System.Diagnostics.Process name_sorter_proc = new System.Diagnostics.Process();
-            // name_sorter_proc.StartInfo.FileName = @"dotnet";
-            // name_sorter_proc.StartInfo.Arguments = "run --project ../../../../../../../OpenPractice/Demos/name-sorter/ blank.txt";
-            name_sorter_proc.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
-            name_sorter_proc.StartInfo.Arguments = "blank.txt";
             string[] blank_line = { "" };
             System.IO.File.WriteAllLines(@"blank.txt", blank_line);
-            name_sorter_proc.StartInfo.Arguments = "blank.txt";
-            name_sorter_proc.StartInfo.RedirectStandardOutput = true;
-            name_sorter_proc.Start();
-            string console_output = name_sorter_proc.StandardOutput.ReadToEnd();
-            name_sorter_proc.WaitForExit();
-            System.IO.File.Delete(@"blank.txt");
+            _name_sorter.StartInfo.Arguments = "blank.txt";
+            _name_sorter.Start();
+            string console_output = _name_sorter.StandardOutput.ReadToEnd();
+            _name_sorter.WaitForExit();
             Assert.Equal("", console_output);
             Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
             string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
             Assert.Equal(blank_line, output_file_lines);
+            System.IO.File.Delete(@"blank.txt");
             System.IO.File.Delete(@"sorted-names-list.txt");
         }
     }
