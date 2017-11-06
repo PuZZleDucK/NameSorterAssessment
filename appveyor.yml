@@ -1,0 +1,18 @@
+version: 1.0.{build}
+
+init:
+- ps: '[System.IO.File]::AppendAllText("C:\Windows\System32\drivers\etc\hosts", "`n93.184.221.200  api.nuget.org")'
+  
+install:
+- cmd: >-
+    type c:\windows\system32\drivers\etc\hosts
+    
+    ping api.nuget.org
+    dotnet restore
+    npm install -g bower
+build:
+  verbosity: minimal
+after_build:
+- cmd: dotnet test
+
+
