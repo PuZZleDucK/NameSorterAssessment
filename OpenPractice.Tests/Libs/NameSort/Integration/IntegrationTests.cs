@@ -1,6 +1,7 @@
 using System;
-using Xunit;
 using System.Collections.Generic;
+using Xunit;
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
 
 namespace Integration
 {
@@ -64,7 +65,6 @@ namespace Integration
         [InlineData("11-advanced-example-random")]
         public void ProgramProcessesExampleFiles(string example_file)
         {
-            System.Console.WriteLine($":: DIR: {System.IO.Directory.GetCurrentDirectory()}");
             string[] expected_output = System.IO.File.ReadAllLines($"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}-expected-output.txt");
             _name_sorter.StartInfo.Arguments = $"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}.txt";
             _name_sorter.Start();
