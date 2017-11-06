@@ -1,3 +1,5 @@
 #!/bin/bash
 
-dotnet test | tr "\n" " "  | grep -e "Failed: 0.*Failed: 0*Failed: 0"  && true || false
+OUTPUT="$(dotnet test)" 
+echo "${OUTPUT}"
+echo "${OUTPUT}" | tr "\n" " "  | grep -e "Failed: 0.*Failed: 0*Failed: 0"  && true || false
