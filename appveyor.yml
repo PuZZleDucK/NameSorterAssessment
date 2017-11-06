@@ -1,18 +1,19 @@
 version: 1.0.{build}
 
+image: Visual Studio 2015
+
 init:
-- ps: '[System.IO.File]::AppendAllText("C:\Windows\System32\drivers\etc\hosts", "`n93.184.221.200  api.nuget.org")'
-  
+  - ps: '[System.IO.File]::AppendAllText("C:\Windows\System32\drivers\etc\hosts", "`n93.184.221.200  api.nuget.org")'
+
 install:
-- cmd: >-
-    type c:\windows\system32\drivers\etc\hosts
-    
-    ping api.nuget.org
-    dotnet restore
-    npm install -g bower
+  - cmd: ping api.nuget.org
+  - cmd: dotnet restore
+
 build:
-  verbosity: minimal
+  verbosity: detailed
+  project: NameSorterAssessment.sln
+
 after_build:
-- cmd: dotnet test
+  - cmd: dotnet test
 
 
