@@ -1,4 +1,4 @@
-Matei ZahariaMark Zuckerberg
+Mark Zuckerberg
 Philip Zimmermann
 Jamie Zawinski
 Victor Yngve
@@ -19,9 +19,7 @@ Jim Weirich
 Peter J. Weinberger
 Pei-Yuan Wei
 Robert Watson
-Joseph Weizenbaum
 John Warnock
-John Walker
 Bob Wallace
 Larry Wall
 Patrick Volkerding
@@ -68,7 +66,6 @@ Cliff Shaw
 Mike Shaver
 Adi Shamir
 Randal L. Schwartz
-Aaron Swartz
 Bill Schelter
 Bob Scheifler
 Chris Sawyer
@@ -94,7 +91,6 @@ Kent Pitman
 Rob Pike
 Charles Petzold
 Jeffrey Peterson
-Petr Mitrichev
 Markus Persson
 Tim Paterson
 Seymour Papert
@@ -151,7 +147,6 @@ Dick Lathwell
 Sam Lantinga
 Butler Lampson
 Leslie Lamport
-Tom Lane
 Andre LaMothe
 Andrew R. Koenig
 Donald E. Knuth
@@ -159,7 +154,6 @@ Jim Knopf
 Tom Knight
 Gary Kildall
 Brian Kernighan
-Stan Kelly-Bootle
 John Kemeny
 Mel Kaye
 Alan Kay
@@ -168,7 +162,6 @@ Mitch Kapor
 Poul-Henning Kamp
 Robert K. Jung
 Bill Joy
-Stephen C. Johnson
 William Jolitz
 Lynne Jolitz
 Paul Jardetzky
@@ -187,7 +180,6 @@ Andy Hertzfeld
 Ted Henter
 Anders Hejlsberg
 Rebecca Heineman
-David Albert Huffman
 David Heinemeier Hansson
 Margaret Hamilton
 Jim Hall
@@ -195,7 +187,6 @@ Daniel Ha
 Andi Gutmans
 Scott Guthrie
 Neil J. Gunther
-Richard Greenblatt
 Ralph Griswold
 John Graham-Cumming
 Paul Graham
@@ -212,7 +203,6 @@ Bill Gates
 Elon Gasper
 Jim Fruchterman
 Martin Fowler
-Brian Fox
 Andrew Fluegelman
 Brad Fitzpatrick
 David Filo
@@ -234,10 +224,8 @@ Jeff Dean
 James Duncan Davidson
 Ole-Johan Dahl
 Dave Cutler
-William Crowther
 Ward Cunningham
 Mark Crispin
-Mike Cowlishaw
 Brad Cox
 Alan Cox
 Alan Cooper
@@ -273,7 +261,6 @@ Fabrice Bellard
 Doug Bell
 Donald Becker
 Kent Beck
-Brian Behlendorf
 Richard Bartle
 Lars Bak
 John Backus

@@ -57,6 +57,11 @@ namespace Integration
         [InlineData("04-two-names-in-order")]
         [InlineData("05-two-names-reversed")]
         [InlineData("06-provided-example")]
+        [InlineData("07-names-with-odd-characters")]
+        [InlineData("08-names-with-initals")]
+        [InlineData("09-advanced-example-near-sorted")]
+        [InlineData("10-advanced-example-reversed")]
+        [InlineData("11-advanced-example-random")]
         public void ProgramProcessesExampleFiles(string example_file)
         {
             string[] expected_output = System.IO.File.ReadAllLines($"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}-expected-output.txt");

@@ -3,7 +3,6 @@ Zed Shaw
 Yukihiro Matsumoto
 Will Wright
 William Jolitz
-William Crowther
 Wietse Venema
 Ward Cunningham
 Ward Christensen
@@ -11,7 +10,6 @@ Walter Bright
 Vinton Cerf
 Victor Yngve
 Toru Iwatani
-Tom Lane
 Tom Knight
 Tim Sweeney
 Tim Paterson
@@ -26,8 +24,6 @@ Steve Fawkner
 Steve Capps
 Stephen Wolfram
 Stephen Richard Bourne
-Stephen C. Johnson
-Stan Kelly-Bootle
 Sophie Wilson
 Simon Tatham
 Sid Meier
@@ -55,7 +51,6 @@ Robert Cecil Martin
 Roberta and Ken Williams
 Rich Skrenta
 Richard Stallman
-Richard Greenblatt
 Richard Brodie
 Richard Bartle
 Rebecca Heineman
@@ -66,7 +61,6 @@ Quentin Stafford-Fraser
 Poul-Henning Kamp
 Phil Katz
 Philip Zimmermann
-Petr Mitrichev
 Peter Norton
 Peter Naur
 Peter J. Weinberger
@@ -86,7 +80,6 @@ Muni Sakya
 Mitch Kapor
 Mike Shaver
 Mike Muuss
-Mike Cowlishaw
 Miguel de Icaza
 Michael Tiemann
 Michael Lesk
@@ -95,7 +88,6 @@ Mel Kaye
 Matt Mullenweg
 Matthew Smith
 Matt Dillon
-Matei Zaharia
 Martin Odersky
 Martin Fowler
 Martin Dougiamas
@@ -132,11 +124,9 @@ Ken Silverman
 Ken Iverson
 Keith Packard
 Joshua Bloch
-Joseph Weizenbaum
 Jon Stephenson von Tetzchner
 Jonathan Blow
 John Warnock
-John Walker
 John Romero
 John Resig
 John Ousterhout
@@ -207,7 +197,6 @@ David Heinemeier Hansson
 David Filo
 David Bradley
 David A. Moon
-David Albert Huffman
 Dave Winer
 Dave Hyatt
 Dave Cutler
@@ -234,8 +223,6 @@ C. A. R. Hoare
 Butler Lampson
 Bruce Wilcox
 Brian Kernighan
-Brian Fox
-Brian Behlendorf
 Brendan Eich
 Bram Moolenaar
 Bram Cohen
@@ -287,4 +274,3 @@ Adi Shamir
 Adele Goldberg
 Adam Dunkels
 Ada Lovelace
-Aaron Swartz
