@@ -9,7 +9,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsof
 echo ":: UPDATE REPOS"
 sudo apt-get update
 echo ":: INSTALL DOTNET"
-sudo apt-get install -qy dotnet-sdk-2.0.2
+sudo apt-get install -y dotnet-sdk-2.0.2
 echo ":: INSTALL libcurl3"
-sudo apt-get install -qy libcurl3
+sudo apt-get install -y libcurl3
 
