@@ -1,2 +1,5 @@
 language: csharp
 solution: NameSorterAssessment.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./OpenPractice/Scripts/setup-build.sh
+  - ./OpenPractice/Scripts/test-build.sh
