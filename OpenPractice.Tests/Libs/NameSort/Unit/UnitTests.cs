@@ -93,7 +93,7 @@ namespace Unit
         public void GivenExampleNamesReturnsSortedNames()
         {
             string[] names = { "Janet Parsons", "Vaughn Lewis", "Adonis Julius Archer", "Shelby Nathan Yoder", "Marin Alvarez", "London Lindsey", "Beau Tristan Bentley", "Leo Gardner", "Hunter Uriah Mathew Clarke", "Mikayla Lopez", "Frankie Conner Ritter" };
-            Assert.Equal("Mrin Alvarez_Adonis Julius Archer_Beau Tristan Bentley_Hunter Uriah Mathew Clarke_Leo Gardner_Vaughn Lewis_London Lindsey_Mikayla Lopez_Janet Parsons_Frankie Conner Ritter_Shelby Nathan Yoder", String.Join("_", _nameSorter.SortNames(names)));
+            Assert.Equal("Marin Alvarez_Adonis Julius Archer_Beau Tristan Bentley_Hunter Uriah Mathew Clarke_Leo Gardner_Vaughn Lewis_London Lindsey_Mikayla Lopez_Janet Parsons_Frankie Conner Ritter_Shelby Nathan Yoder", String.Join("_", _nameSorter.SortNames(names)));
         }
 
     }
