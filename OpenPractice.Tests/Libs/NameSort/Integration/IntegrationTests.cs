@@ -8,18 +8,37 @@ namespace Integration
     {
         private static System.Diagnostics.Process _name_sorter;
 
+        public static bool IsPosix
+        {
+            get
+            {
+                int p = (int) Environment.OSVersion.Platform;
+                return (p == 4) || (p == 6) || (p == 128);
+            }
+        }
+
         public IntegrationTests()
         {
             if (_name_sorter == null) {
                 System.Diagnostics.Process _name_sort_builder;
                 _name_sort_builder = new System.Diagnostics.Process();
                 _name_sort_builder.StartInfo.FileName = @"dotnet";
-                _name_sort_builder.StartInfo.Arguments = "publish -c Release -r ubuntu.14.04-x64 ../../../../../../../OpenPractice/Demos/name-sorter";
+                if (IsPosix)
+                {
+                    _name_sort_builder.StartInfo.Arguments = "publish -c Release -r ubuntu.14.04-x64 ../../../../../../../OpenPractice/Demos/name-sorter";
+                } else {
+                    _name_sort_builder.StartInfo.Arguments = @"publish -c Release -r win10-x64 ..\..\..\..\..\..\..\OpenPractice\Demos\name-sorter";
+                }
                 _name_sort_builder.Start();
                 _name_sort_builder.WaitForExit();
             }
             _name_sorter = new System.Diagnostics.Process();
-            _name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
+            if (IsPosix)
+            {
+                _name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
+            } else {
+                _name_sorter.StartInfo.FileName = @"..\..\..\..\..\..\..\OpenPractice\Demos\name-sorter\bin\Release\netcoreapp2.0\win10-x64\publish\name-sorter";
+            }
             _name_sorter.StartInfo.RedirectStandardOutput = true;
         }
 
