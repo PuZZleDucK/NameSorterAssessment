@@ -27,10 +27,14 @@ namespace Integration
             name_sorter_proc.StartInfo.Arguments = "../../../../../../../OpenPractice.Tests/Libs/NameSort/Integration/bin/Debug/netcoreapp2.0/blank.txt";
             name_sorter_proc.StartInfo.RedirectStandardOutput = true;
             name_sorter_proc.Start();
-            string output = name_sorter_proc.StandardOutput.ReadToEnd();
+            string console_output = name_sorter_proc.StandardOutput.ReadToEnd();
             name_sorter_proc.WaitForExit();
-            Assert.Equal("", output);
-            // read file output file assert too
+            System.IO.File.Delete(@"blank.txt");
+            Assert.Equal("", console_output);
+            Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
+            string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
+            Assert.Equal(blank_line, output_file_lines);
+            System.IO.File.Delete(@"sorted-names-list.txt");
         }
     }
 }
