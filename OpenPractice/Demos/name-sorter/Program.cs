@@ -15,9 +15,8 @@ namespace name_sorter
             }
             if (System.IO.File.Exists(args[0]))
             {
-                string[] unsorted_names = System.IO.File.ReadAllLines(args[0]);
                 NameSorter name_sorter = new NameSorter();
-                string[] sorted_names = name_sorter.SortNames(unsorted_names);
+                string[] sorted_names = name_sorter.SortNames(System.IO.File.ReadAllLines(args[0]));
                 System.Console.WriteLine(String.Join('\n', sorted_names));
                 System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
 
