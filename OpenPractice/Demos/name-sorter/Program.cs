@@ -28,9 +28,9 @@ namespace name_sorter
                 string[] sorted_names = name_sorter.SortNames(System.IO.File.ReadAllLines(args[0]));
                 if (IsPosix)
                 {
-                    System.Console.WriteLine(String.Join("\n", sorted_names));
+                    System.Console.WriteLine(String.Join(@"\n", sorted_names));
                 } else {
-                    System.Console.WriteLine(String.Join("\r\n", sorted_names));
+                    System.Console.WriteLine(String.Join(@"\r\n", sorted_names));
                 }
                 System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
 

@@ -97,7 +97,7 @@ namespace Integration
             {
                 Assert.Equal(String.Join("\n", expected_output)+"\n", console_output);
             } else {
-                Assert.Equal(String.Join("\rn", expected_output)+"\rn", console_output);
+                Assert.Equal(String.Join("\r\n", expected_output)+"\r\n", console_output);
             }
             Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
             string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
