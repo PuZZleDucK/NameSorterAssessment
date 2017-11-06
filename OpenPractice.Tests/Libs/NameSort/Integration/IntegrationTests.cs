@@ -56,7 +56,7 @@ namespace Integration
         [InlineData("03-single-full-name")]
         [InlineData("04-two-names-in-order")]
         [InlineData("05-two-names-reversed")]
-        // [InlineData("06-provided-example")]
+        [InlineData("06-provided-example")]
         public void ProgramProcessesExampleFiles(string example_file)
         {
             string[] expected_output = System.IO.File.ReadAllLines($"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}-expected-output.txt");

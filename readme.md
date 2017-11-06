@@ -43,10 +43,10 @@ The following sections consist of my personal notes for the project. They are in
 - [x] test program with simple inputs
 - [x] test advanced inputs
 - [x] test mixed simple/advanced inputs
-- [ ] integration tests for file input/output
-- [ ] add cli interface
+- [x] integration tests for file input/output
+- [x] add cli interface
 - [ ] add advanced sample data
-- [ ] test examples on cli in integration
+- [x] test examples on cli in integration
 - [ ] add alternative CI platforms/providers
 - [ ] better erroring on invalid names
 - [ ] code metrics
