@@ -5,7 +5,16 @@ namespace name_sorter
 {
     class Program
     {
-        static void Main(string[] args)
+         public static bool IsPosix
+        {
+            get
+            {
+                int p = (int) Environment.OSVersion.Platform;
+                return (p == 4) || (p == 6) || (p == 128);
+            }
+        }
+
+       static void Main(string[] args)
         {
             if (args.Length != 1)
             {
@@ -17,7 +26,12 @@ namespace name_sorter
             {
                 NameSorter name_sorter = new NameSorter();
                 string[] sorted_names = name_sorter.SortNames(System.IO.File.ReadAllLines(args[0]));
-                System.Console.WriteLine(String.Join('\n', sorted_names));
+                if (IsPosix)
+                {
+                    System.Console.WriteLine(String.Join("\n", sorted_names));
+                } else {
+                    System.Console.WriteLine(String.Join("\n\r", sorted_names));
+                }
                 System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
 
             }
