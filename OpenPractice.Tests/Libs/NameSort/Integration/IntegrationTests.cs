@@ -65,7 +65,6 @@ namespace Integration
         public void ProgramProcessesExampleFiles(string example_file)
         {
             System.Console.WriteLine($":: DIR: {System.IO.Directory.GetCurrentDirectory()}");
-            System.Console.WriteLine($":: RELEASE DIR: {System.IO.FileInfo[] fileNames = dirInfo.GetFiles("../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter/*.*")}");
             string[] expected_output = System.IO.File.ReadAllLines($"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}-expected-output.txt");
             _name_sorter.StartInfo.Arguments = $"../../../../../../../OpenPractice/Demos/name-sorter/examples/{example_file}.txt";
             _name_sorter.Start();
