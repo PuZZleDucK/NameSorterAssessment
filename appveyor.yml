@@ -7,7 +7,10 @@ init:
 
 install:
   - cmd: ping api.nuget.org
+
+before_build:
   - cmd: dotnet restore
+  - cmd: nuget restore
 
 build:
   verbosity: detailed
