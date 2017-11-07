@@ -1,12 +1,13 @@
 using System;
 using Xunit;
 using TestHelpers;
+using System.Diagnostics;
 
 namespace Stress
 {
     public class FileCountTests
     {
-        private static System.Diagnostics.Process _name_sorter;
+        private static Process _name_sorter;
 
         public FileCountTests()
         {

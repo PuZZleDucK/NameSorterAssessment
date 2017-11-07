@@ -13,7 +13,7 @@ namespace TestHelpers
         public static Process PrepareNameSorterProcess(Process _name_sorter)
         {
             if (_name_sorter == null) {
-                var _name_sort_builder = new System.Diagnostics.Process();
+                var _name_sort_builder = new Process();
                 _name_sort_builder.StartInfo.FileName = @"dotnet";
                 if (Platform.IsPosix)
                 {
@@ -24,7 +24,7 @@ namespace TestHelpers
                 _name_sort_builder.Start();
                 _name_sort_builder.WaitForExit();
             }
-            var name_sorter = new System.Diagnostics.Process();
+            var name_sorter = new Process();
             if (Platform.IsPosix)
             {
                 name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";

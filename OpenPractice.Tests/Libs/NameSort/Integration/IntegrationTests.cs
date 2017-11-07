@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using Xunit;
 using Helpers;
 using TestHelpers;
+using System.Diagnostics;
 
 namespace Integration
 {
     public class IntegrationTests
     {
-        private static System.Diagnostics.Process _name_sorter;
+        private static Process _name_sorter;
 
         public IntegrationTests()
         {

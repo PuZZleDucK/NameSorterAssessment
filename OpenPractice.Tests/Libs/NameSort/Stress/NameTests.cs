@@ -1,13 +1,14 @@
 using System;
 using Xunit;
 using TestHelpers;
+using System.Diagnostics;
 [assembly: CollectionBehavior(DisableTestParallelization = true)]
 
 namespace Stress
 {
     public class NameTests
     {
-        private static System.Diagnostics.Process _name_sorter;
+        private static Process _name_sorter;
 
         public NameTests()
         {
