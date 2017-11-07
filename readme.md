@@ -52,6 +52,7 @@ The following sections consist of my personal notes for the project. They are in
 - [x] add alternative CI platforms/providers
 - [ ] add helper methods
 - [ ] better erroring on invalid names
+- [ ] error if file does not exist
 - [x] add release candidate
 - [ ] review submission (style, documentation, presentation, CI/CD?)
 
