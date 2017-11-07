@@ -19,7 +19,7 @@ build:
   verbosity: minimal
   project: NameSorterAssessment.sln
 
-test:
+after_build:
   - cmd: dotnet test OpenPractice.Tests\Libs\NameSort\Unit\
   - cmd: dotnet test OpenPractice.Tests\Libs\NameSort\Integration\
   - cmd: dotnet test OpenPractice.Tests\Libs\NameSort\Stress\
