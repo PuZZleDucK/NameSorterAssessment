@@ -72,8 +72,7 @@ Then in the OrderBy clause we can conditionally switch between our sorting metho
 if(sort_on_first_name)
 {
     return other_names + " " + last_name;
-} else
-{
+} else {
     return last_name + " " + other_names;
 }
 ```

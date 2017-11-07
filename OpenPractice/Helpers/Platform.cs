@@ -23,8 +23,7 @@ namespace Helpers
                 if(IsPosix)
                 {
                     return "\n";
-                } else
-                {
+                } else {
                     return "\r\n";
                 }
             }

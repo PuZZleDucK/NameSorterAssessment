@@ -21,8 +21,7 @@ namespace name_sorter
                 string[] sorted_names = name_sorter.SortNames(System.IO.File.ReadAllLines(args[0]));
                 System.Console.WriteLine(String.Join(Platform.Delimiter, sorted_names));
                 System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
-            } else
-            {
+            } else {
                 // Invalid file given... print help and error out.
                 System.Console.WriteLine(":: NameSorter ::");
                 System.Console.WriteLine(NameSorter.ProgramUsageText());
