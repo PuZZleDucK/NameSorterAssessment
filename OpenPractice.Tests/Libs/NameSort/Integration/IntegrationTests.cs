@@ -34,12 +34,7 @@ namespace Integration
             _name_sorter.Start();
             string console_output = _name_sorter.StandardOutput.ReadToEnd();
             _name_sorter.WaitForExit();
-            if (Platform.IsPosix)
-            {
-                Assert.Equal("\n", console_output);
-            } else {
-                Assert.Equal("\r\n", console_output);
-            }
+            Assert.Equal(Platform.Delimiter, console_output);
             Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
             string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");
             Assert.Equal(blank_line, output_file_lines);
@@ -68,9 +63,9 @@ namespace Integration
             _name_sorter.WaitForExit();
             if (Platform.IsPosix)
             {
-                Assert.Equal(String.Join("\n", expected_output) + "\n", console_output);
+                Assert.Equal(String.Join(Platform.Delimiter, expected_output) + Platform.Delimiter, console_output);
             } else {
-                Assert.Equal((String.Join("\r\n", expected_output) + "\r\n").Length, console_output.Length);
+                Assert.Equal((String.Join(Platform.Delimiter, expected_output) + Platform.Delimiter).Length, console_output.Length);
             }
             Assert.True(System.IO.File.Exists(@"sorted-names-list.txt"));
             string[] output_file_lines = System.IO.File.ReadAllLines(@"sorted-names-list.txt");

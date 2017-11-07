@@ -1,5 +1,6 @@
 ﻿using System;
 
+// These are functions which may be useful anywhere in the OpenPractice project
 namespace Helpers
 {
     public class Platform
@@ -15,5 +16,18 @@ namespace Helpers
             }
         }
 
+        public static string Delimiter
+        {
+            get
+            {
+                if(IsPosix)
+                {
+                    return "\n";
+                } else
+                {
+                    return "\r\n";
+                }
+            }
+        }
     }
 }

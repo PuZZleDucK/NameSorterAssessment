@@ -20,7 +20,7 @@ namespace NameSort
                   // ERR out here... invalid name
                   System.Console.WriteLine($"Malformed name detected: {persons_names}");
                 }
-                // also ERR on "A name must have at least 1 given name" if possible
+                // also ERR on "A name must have at least 1 given name" if possible - blank line
                 string last_name = persons_names.Last();
                 string other_names = String.Join(" ", persons_names.Take(persons_names.Length - 1).ToArray());
                 return last_name + " " + other_names;
