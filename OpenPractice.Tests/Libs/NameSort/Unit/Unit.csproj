@@ -16,6 +16,7 @@
     <ProjectReference Include="..\..\..\..\OpenPractice\Demos\name-sorter\name-sorter.csproj" />
     <ProjectReference Include="..\..\..\..\OpenPractice\Libs\NameSort\NameSort.csproj" />
     <ProjectReference Include="..\..\..\..\OpenPractice\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\..\..\TestHelpers\TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>
