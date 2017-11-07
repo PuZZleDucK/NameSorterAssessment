@@ -53,10 +53,10 @@ The following sections consist of my personal notes for the project. They are in
 - [x] stress testing
 - [x] add alternative CI platforms/providers
 - [x] add helper methods
-- [ ] naming review
+- [x] naming review
 - [ ] SOLID review
 - [ ] comment review
-- [ ] readability review
+- [x] readability review
 - [ ] better erroring on invalid names
 - [ ] error if file does not exist
 - [x] add release candidate

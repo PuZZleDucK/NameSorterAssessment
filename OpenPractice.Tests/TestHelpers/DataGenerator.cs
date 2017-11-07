@@ -13,29 +13,28 @@ namespace TestHelpers
 
         private static string GenerateName(int max_characters_in_name)
         {
-            StringBuilder name = new StringBuilder();
-            int name_count = random.Next(4)+1;
-            for (int i = 0; i < name_count; i++)
+            StringBuilder new_name = new StringBuilder();
+            int name_parts_count = random.Next(4)+1;
+            for (; name_parts_count > 0; name_parts_count--)
             {
-                int character_count = random.Next(max_characters_in_name)+1;
-                for (int j = 0; j < character_count; j++)
+                for (int character_count = random.Next(max_characters_in_name); character_count > 0; character_count--)
                 {
-                    name.Append(name_characters[random.Next(name_characters.Length)]);
+                    new_name.Append(name_characters[random.Next(name_characters.Length)]);
                 }
-                if(i < (name_count - 1))
+                if(name_parts_count > 0)
                 {
-                    name.Append(" ");
+                    new_name.Append(" ");
                 }
             }
-            return name.ToString();
+            return new_name.ToString();
         }
 
         public static string[] Names(int name_count, int max_characters_in_name = 100)
         {
             string[] random_names = new string[name_count];
-            for(var i = 0; i < name_count; i++)
+            for(; name_count > 0 ; name_count--)
             {
-                random_names[i] = GenerateName(max_characters_in_name);
+                random_names[name_count-1] = GenerateName(max_characters_in_name);
             }
             return random_names;
         }

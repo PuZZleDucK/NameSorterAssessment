@@ -15,12 +15,6 @@ namespace Unit
         }
 
         [Fact]
-        public void SanityTest()
-        {
-            Assert.True(true, "True should be true");
-        }
-
-        [Fact]
         public void MinimalUsageInformation()
         {
             Assert.Matches("usage information", NameSorter.ProgramUsageText());

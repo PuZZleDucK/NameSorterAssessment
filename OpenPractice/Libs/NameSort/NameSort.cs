@@ -7,7 +7,7 @@ namespace NameSort
     {
         public static string ProgramUsageText()
         {
-            return $"usage information:\n {System.AppDomain.CurrentDomain.FriendlyName} <list-to-be-sorted>";
+            return $"name-sort program usage information:\n {System.AppDomain.CurrentDomain.FriendlyName} <list-to-be-sorted>";
         }
 
         public string[] SortNames(string[] unsorted_names)

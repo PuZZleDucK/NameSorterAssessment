@@ -77,6 +77,5 @@ namespace Integration
             Assert.Equal(String.Join(" -> ", expected_output), String.Join(" -> ", output_file_lines));
             System.IO.File.Delete(@"sorted-names-list.txt");
         }
-
     }
 }
