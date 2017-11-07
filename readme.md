@@ -30,6 +30,8 @@ The following sections consist of my personal notes for the project. They are in
 - The problem description describes invoking the program like so: ```name-sorter ./unsorted-names-list.txt```. However dotnet core seems to (by design) not produce standalone executables in the interests of platform independence. I have created a short build script that converts the .dll file produced by dotnet into an executable usable on linux systems but have not tested if this works on windows or mac.
 - Performance limit on total file size (name count or length) in relation to machine memory. Difficult to overcome without overengineering (sort input into subcategories first, file buffering, etc)
 - NuGet going down can cause build and tests to fail :(
+- The final three integration tests reveal some issues with the windows build. "Madona\r\n" not equal to "Madona\r\n"... not sure how to debug that :/
+
 
 ## The Plan
 
@@ -51,6 +53,7 @@ The following sections consist of my personal notes for the project. They are in
 - [x] stress testing
 - [x] add alternative CI platforms/providers
 - [ ] add helper methods
+- [ ] SOLID review
 - [ ] better erroring on invalid names
 - [ ] error if file does not exist
 - [x] add release candidate
