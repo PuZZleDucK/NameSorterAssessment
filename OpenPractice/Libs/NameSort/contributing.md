@@ -28,7 +28,9 @@ And Travis.ci
 
 [![Build Status](https://travis-ci.org/PuZZleDucK/NameSorterAssessment.svg?branch=master)](https://travis-ci.org/PuZZleDucK/NameSorterAssessment)
 
+And AppVoyer
 
+[![Build status](https://ci.appveyor.com/api/projects/status/qsgtgxd20eloc8i0?svg=true)](https://ci.appveyor.com/project/PuZZleDucK/namesorterassessment)
 
 
 ## Your first contribution

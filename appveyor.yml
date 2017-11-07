@@ -16,12 +16,10 @@ build:
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
-  verbosity: minimal
+  verbosity: quiet
   project: NameSorterAssessment.sln
 
 after_build:
-  - cmd: dotnet test OpenPractice.Tests\Libs\NameSort\Unit\
-  - cmd: dotnet test OpenPractice.Tests\Libs\NameSort\Integration\
-  - cmd: dotnet test OpenPractice.Tests\Libs\NameSort\Stress\
+  - cmd: dotnet test
 
 
