@@ -54,7 +54,7 @@ The following sections consist of my personal notes for the project. They are in
 - [x] add alternative CI platforms/providers
 - [x] add helper methods
 - [x] naming review
-- [ ] SOLID review
+- [x] SOLID review
 - [ ] comment review
 - [x] readability review
 - [ ] better erroring on invalid names
@@ -80,11 +80,10 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] integration test project
 - [x] stress tests project
 
-- [ ] mostly long and descriptive naming
+- [x] mostly long and descriptive naming
 - [ ] self documenting... comments usually explain "why" or "why not the usual/expected way"
 - [x] model / view separation - demo
 - [ ] validation and verbose error reporting
-- [ ] functional (foreach) style at times
 - [x] nice .gitattributes
 - [ ] Fody NullGuard - investigate if time allows
 - [x] honest about defects
@@ -107,12 +106,12 @@ Below is a collection of notes and check points I intend to cover that has been 
 - our goal is not to see you implement a trivial sorting algroithm
 - [ ] how your code communicates it's purpose clearly and with empathy to your potential team members.
 - [ ] Caring about how easy your code is to understand and navigate for the next engineer who touches it.
-- [ ] Understand your ability to compose quality code that adheres to SOLID principles
-  - [ ] Single Responsibility Principle
-  - [ ] Open/Close Principle
-  - [ ] Liskov Substitution Principle
-  - [ ] Interface Segregation Principle
-  - [ ] Dependency Inversion Principle
+- [x] Understand your ability to compose quality code that adheres to SOLID principles
+  - [x] Single Responsibility Principle
+  - [x] Open/Close Principle
+  - [x] Liskov Substitution Principle
+  - [x] Interface Segregation Principle
+  - [x] Dependency Inversion Principle
 - [x] to see how you write tests.
 - [x] best effort
 - [x] a solution that you are proud of
