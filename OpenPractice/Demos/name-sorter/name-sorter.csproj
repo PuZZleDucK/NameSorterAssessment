@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Libs\NameSort\NameSort.csproj" />
+    <ProjectReference Include="..\..\Helpers\Helpers.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

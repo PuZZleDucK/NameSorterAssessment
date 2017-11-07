@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Helpers;
 
 namespace Integration
 {
@@ -8,22 +9,13 @@ namespace Integration
     {
         private static System.Diagnostics.Process _name_sorter;
 
-        public static bool IsPosix
-        {
-            get
-            {
-                int p = (int) Environment.OSVersion.Platform;
-                return (p == 4) || (p == 6) || (p == 128);
-            }
-        }
-
         public IntegrationTests()
         {
             if (_name_sorter == null) {
                 System.Diagnostics.Process _name_sort_builder;
                 _name_sort_builder = new System.Diagnostics.Process();
                 _name_sort_builder.StartInfo.FileName = @"dotnet";
-                if (IsPosix)
+                if (Platform.IsPosix)
                 {
                     _name_sort_builder.StartInfo.Arguments = "publish -c Release -r ubuntu.14.04-x64 ../../../../../../../OpenPractice/Demos/name-sorter";
                 } else {
@@ -33,7 +25,7 @@ namespace Integration
                 _name_sort_builder.WaitForExit();
             }
             _name_sorter = new System.Diagnostics.Process();
-            if (IsPosix)
+            if (Platform.IsPosix)
             {
                 _name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
             } else {
@@ -61,7 +53,7 @@ namespace Integration
             _name_sorter.Start();
             string console_output = _name_sorter.StandardOutput.ReadToEnd();
             _name_sorter.WaitForExit();
-            if (IsPosix)
+            if (Platform.IsPosix)
             {
                 Assert.Equal("\n", console_output);
             } else {
@@ -93,7 +85,7 @@ namespace Integration
             _name_sorter.Start();
             string console_output = _name_sorter.StandardOutput.ReadToEnd();
             _name_sorter.WaitForExit();
-            if (IsPosix)
+            if (Platform.IsPosix)
             {
                 Assert.Equal(String.Join("\n", expected_output) + "\n", console_output);
             } else {
