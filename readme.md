@@ -8,14 +8,14 @@
 
 I have presented my submission as a class library called ```NameSorter``` in the ```Libs``` directory of a mock ```OpenPractice``` framework. The NameSorter library has a demonstration command line interface for user exploration and extensive unit, integration and stress testing.
 
-I have developed and tested the project on Ubuntu 17.10. It has also been tested Ubuntu 14.04 and Windows Visual Studio 2017 by Continuious Integration servers on Semaphore, Travis and AppVeyor.
+I have developed and tested the project on Ubuntu 17.10. It has also been tested Ubuntu 14.04 and Windows Visual Studio 2017 by Continuous Integration servers on [Semaphore](https://semaphoreci.com/puzzleduck/namesorterassessment), [Travis](https://travis-ci.org/PuZZleDucK/NameSorterAssessment/) and [AppVeyor](https://ci.appveyor.com/project/PuZZleDucK/namesorterassessment).
 
-The project was developed using test driven development which can be easily observed by viewing the Semaphore CI history where I pushed every failing test before proceeding to develop the solution.
+The project was developed using test driven development which can be easily observed by viewing the [Semaphore CI history](https://semaphoreci.com/puzzleduck/namesorterassessment) where I pushed every failing test before proceeding to develop the solution.
 
 
 ## Getting the "Open Practice" project
 
-To build your own version of OpenPractice and all the associated libraries such as NameSort you will need to download the source code with the following commands:
+To build your own version of **OpenPractice** and all the associated libraries such as **NameSort** you will need to download the source code with the following commands:
 
 ```sh
 git clone https://github.com/PuZZleDucK/NameSorterAssessment
@@ -31,17 +31,17 @@ dotnet build
 
 ## Running the Library Demonstrations
 
-You can run any of the library demonstration programms such as ```name-sorter``` by invoking the dotnew run command like so:
+You can run any of the library demonstration programs such as ```name-sorter``` by invoking the dotnet run command like so:
 
-```
+```sh
 dotnet run --project OpenPractice/Demos/name-sorter/
 ```
 
 ## Developing with OpenPractice
 
-If you're interested in getting to know more about OpenPractice or the NameSort library there are plenty of ways to get involved. You can check out our wiki online here: https://github.com/PuZZleDucK/NameSorterAssessment/wiki
+If you're interested in getting to know more about OpenPractice or the NameSort library there are plenty of ways to get involved. You can check out [our wiki.](https://github.com/PuZZleDucK/NameSorterAssessment/wiki)
 
-If your interested in developing a library, testing the code or contribuiting then checkout our excelent [contributing.md](https://github.com/PuZZleDucK/NameSorterAssessment/blob/master/contributing.md) file for more info 
+If your interested in developing a library, testing the code or contribuiting then checkout our excelent [contributing.md developer guide](https://github.com/PuZZleDucK/NameSorterAssessment/blob/master/contributing.md) for more information.
 
 
 
@@ -52,9 +52,9 @@ The following sections consist of my personal notes for the project. They are in
 ## Assumptions and Issues
 
 - Could a name not have a last-name and only have a first-name? My assumption was a yes
-- This last-name-could-be-null assumption causes an issue with where to sort a name with a single first-name and no last-name like "Teller" in a list where other entries have a last-name like "Raymond Joseph Teller". I have deided it makes most sense to list them in order at the top as the string "" seems to precede any other string (bonus: it was easy)
+- This last-name-could-be-null assumption causes an issue with where to sort a name with a single first-name and no last-name like "Teller" in a list where other entries have a last-name like "Raymond Joseph Teller". I have decided it makes most sense to list them in order at the top as the string "" seems to precede any other string (bonus: it was easy)
 - The problem description describes invoking the program like so: ```name-sorter ./unsorted-names-list.txt```. However dotnet core seems to (by design) not produce standalone executables in the interests of platform independence. I have included instructions on how to run the program as best I can.
-- Main performance limit is dependant on total file size (a combination of name-count and name-length) in relation to machine memory. Difficult to overcome without overengineering (sort input into subcategories first, file buffering, etc)
+- Main performance limit is dependant on total file size (a combination of name-count and name-length) in relation to machine memory. Difficult to overcome without over engineering (sort input into subcategories first, file buffering, etc)
 - NuGet going down can cause build and tests to fail :(
 - The final three integration tests reveal some issues with the windows build. "Madona\r\n" not equal to "Madona\r\n"... not sure how to debug that :/ ... the output is character for character an exact match and string lengths can be used to confirm no data is lost.
 
@@ -87,8 +87,8 @@ The following sections consist of my personal notes for the project. They are in
 - [x] error if file does not exist
 - [x] add release candidate
 - [x] review c# conventions
-- [ ] update docs and references (check commands in docs work)
-- [ ] review submission (documentation, presentation, CI/CD?)
+- [x] update docs and references (check commands in docs work)
+- [x] review submission (documentation, presentation, CI/CD?)
 
 
 ## GlobalX source code review observations
@@ -116,7 +116,7 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] honest about defects
 
 
-## Notes
+## Notes form Assignment
 
 - [x] our goal is not to see you implement a trivial sorting algroithm
 - [x] how your code communicates it's purpose clearly and with empathy to others
@@ -151,7 +151,7 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] Unit tests should exist.
 - [x] Minimal, practical documentation should exist.
 - [x] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
-- [ ] When you are done let us know the url of the repo.
+- [x] When you are done let us know the url of the repo.
 
 ## Addendum
 
