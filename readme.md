@@ -1,20 +1,49 @@
 
 
-# Global X - Open Practice - Name Sorter Library
+# Global X - Open Practice and Name Sorter Library
 
-I have presented the project as a mock library called ```NameSorter``` in the ```Libs``` directory of the ```OpenPractice``` framework with a demo cli interface.
+[![Build Status](https://semaphoreci.com/api/v1/puzzleduck/namesorterassessment/branches/master/badge.svg)](https://semaphoreci.com/puzzleduck/namesorterassessment) [![Build Status](https://travis-ci.org/PuZZleDucK/NameSorterAssessment.svg?branch=master)](https://travis-ci.org/PuZZleDucK/NameSorterAssessment) [![Build status](https://ci.appveyor.com/api/projects/status/qsgtgxd20eloc8i0?svg=true)](https://ci.appveyor.com/project/PuZZleDucK/namesorterassessment)
 
-I have developed the project on Ubuntu 17.10 and tested it in CI on Ubuntu 14.04. It would be ideal to include alternative platforms.
+## Preamble
 
-I have chosen to use Semaphore for my CI service primarily as it is what I'm most familiar with. An added bonus was that it is not a "supported by default" platform on Semaphore so I got to learn how to set it up from scratch. Alternative providers would also be a bonus.
+I have presented my submission as a class library called ```NameSorter``` in the ```Libs``` directory of a mock ```OpenPractice``` framework. The NameSorter library has a demonstration command line interface for user exploration and extensive unit, integration and stress testing.
+
+I have developed and tested the project on Ubuntu 17.10. It has also been tested Ubuntu 14.04 and Windows Visual Studio 2017 by Continuious Integration servers on Semaphore, Travis and AppVeyor.
+
+The project was developed using test driven development which can be easily observed by viewing the Semaphore CI history where I pushed every failing test before proceeding to develop the solution.
 
 
 ## Getting the "Open Practice" project
+
+To build your own version of OpenPractice and all the associated libraries such as NameSort you will need to download the source code with the following commands:
 
 ```sh
 git clone https://github.com/PuZZleDucK/NameSorterAssessment
 cd NameSorterAssessment
 ```
+
+You can build OpenPractice and all its associated libraries in one step with:
+
+```sh
+dotnet build
+```
+
+
+## Running the Library Demonstrations
+
+You can run any of the library demonstration programms such as ```name-sorter``` by invoking the dotnew run command like so:
+
+```
+dotnet run --project OpenPractice/Demos/name-sorter/
+```
+
+## Developing with OpenPractice
+
+If you're interested in getting to know more about OpenPractice or the NameSort library there are plenty of ways to get involved. You can check out our wiki online here: https://github.com/PuZZleDucK/NameSorterAssessment/wiki
+
+If your interested in developing a library, testing the code or contribuiting then checkout our excelent [contributing.md](https://github.com/PuZZleDucK/NameSorterAssessment/blob/master/contributing.md) file for more info 
+
+
 
 # Behind the Scenes
 
@@ -22,15 +51,12 @@ The following sections consist of my personal notes for the project. They are in
 
 ## Assumptions and Issues
 
-- We want the program to give a best-effort if the list contains invalid names (name not in output, warning printed to console (as it occurs and summary at end), possible err-out.txt list?)
-- Including the library in a mock "OpenPractice" project means that the the main readme.md and other files referring to the library are in the wrong place and should be in the Libs directory and will have to be reffered to in the new OpenPractice readme.md
-- The way the fail count is detected in CI is not ideal. If an error were to emmit the string "Failed: 0" as part of the error message this could fool the CI into thinking all is ok :(
 - Could a name not have a last-name and only have a first-name? My assumption was a yes
-- This last-name-could-be-null assumption causes an issue with where to sort a name with a single first-name and no last-name like "Teller" in a list where other entries have a last-name like "Raymond Joseph Teller". I have deided it makes most sense to list them in order at the top as the string "" seems to precede any other string
-- The problem description describes invoking the program like so: ```name-sorter ./unsorted-names-list.txt```. However dotnet core seems to (by design) not produce standalone executables in the interests of platform independence. I have created a short build script that converts the .dll file produced by dotnet into an executable usable on linux systems but have not tested if this works on windows or mac.
-- Performance limit on total file size (name count or length) in relation to machine memory. Difficult to overcome without overengineering (sort input into subcategories first, file buffering, etc)
+- This last-name-could-be-null assumption causes an issue with where to sort a name with a single first-name and no last-name like "Teller" in a list where other entries have a last-name like "Raymond Joseph Teller". I have deided it makes most sense to list them in order at the top as the string "" seems to precede any other string (bonus: it was easy)
+- The problem description describes invoking the program like so: ```name-sorter ./unsorted-names-list.txt```. However dotnet core seems to (by design) not produce standalone executables in the interests of platform independence. I have included instructions on how to run the program as best I can.
+- Main performance limit is dependant on total file size (a combination of name-count and name-length) in relation to machine memory. Difficult to overcome without overengineering (sort input into subcategories first, file buffering, etc)
 - NuGet going down can cause build and tests to fail :(
-- The final three integration tests reveal some issues with the windows build. "Madona\r\n" not equal to "Madona\r\n"... not sure how to debug that :/
+- The final three integration tests reveal some issues with the windows build. "Madona\r\n" not equal to "Madona\r\n"... not sure how to debug that :/ ... the output is character for character an exact match and string lengths can be used to confirm no data is lost.
 
 
 ## The Plan
@@ -60,8 +86,9 @@ The following sections consist of my personal notes for the project. They are in
 - [x] better erroring on invalid names
 - [x] error if file does not exist
 - [x] add release candidate
+- [x] review c# conventions
 - [ ] update docs and references (check commands in docs work)
-- [ ] review submission (style, documentation, presentation, CI/CD?)
+- [ ] review submission (documentation, presentation, CI/CD?)
 
 
 ## GlobalX source code review observations
@@ -76,7 +103,7 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] include examples /
 - [x] include demo
 - [x] include samples
-- [ ] newbe/hackathon/low-hanging-fruit planning (multiple file arguments, output file specification, large files, ...)
+- [x] newbe/hackathon/low-hanging-fruit planning (multiple file arguments, output file specification, large files, ...)
 - [x] unit test project
 - [x] integration test project
 - [x] stress tests project
@@ -88,24 +115,12 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] nice .gitattributes
 - [x] honest about defects
 
-Other observations not strictly relevant in no particular order:
 
-- strict js :D
-- material gui
-- some old issues... mostly new
-- some terse abbreviations in naming - only one code base
-- ```if (object) { one liner }``` used often - only one code base
+## Notes
 
-## The Challenge - GlobalX Coding Assessment
-
-Below is a collection of notes and check points I intend to cover that has been condensed from the origional assessment challenge.
-
-### Notes
-
-- problem domain is deliberately simple
-- our goal is not to see you implement a trivial sorting algroithm
-- [x] how your code communicates it's purpose clearly and with empathy to your potential team members.
-- [ ] Caring about how easy your code is to understand and navigate for the next engineer who touches it.
+- [x] our goal is not to see you implement a trivial sorting algroithm
+- [x] how your code communicates it's purpose clearly and with empathy to others
+- [x] how easy your code is to understand and navigate for the next person
 - [x] Understand your ability to compose quality code that adheres to SOLID principles
   - [x] Single Responsibility Principle
   - [x] Open/Close Principle
@@ -137,6 +152,8 @@ Below is a collection of notes and check points I intend to cover that has been 
 - [x] Minimal, practical documentation should exist.
 - [x] Create a build pipeline like Travis or AppVeyor that execute build and test steps.
 - [ ] When you are done let us know the url of the repo.
+
+## Addendum
 
 ![](https://pbs.twimg.com/media/CyjIC1aUAAAjfCy?format=jpg&name=small)
 
