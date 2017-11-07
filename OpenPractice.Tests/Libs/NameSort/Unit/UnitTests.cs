@@ -23,7 +23,7 @@ namespace Unit
         [Fact]
         public void GivenNothingReturnsNothing()
         {
-            string[] nobody = new string[0];
+            var nobody = new string[0];
             Assert.Equal("", String.Join(" ", _nameSorter.SortNames(nobody)));
         }
 

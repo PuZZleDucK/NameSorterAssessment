@@ -6,11 +6,14 @@ namespace TestHelpers
 {
     public class SortBuilder
     {
+        // We build a particular binary to harness into the integration and stress tests.
+        // On some machines (CI in particular) we may not have access to previous binaries
+        // so we proactivly build it for each test suite. A compromise between speed and
+        // reliability.
         public static Process PrepareNameSorterProcess(Process _name_sorter)
         {
             if (_name_sorter == null) {
-                System.Diagnostics.Process _name_sort_builder;
-                _name_sort_builder = new System.Diagnostics.Process();
+                var _name_sort_builder = new System.Diagnostics.Process();
                 _name_sort_builder.StartInfo.FileName = @"dotnet";
                 if (Platform.IsPosix)
                 {
@@ -21,15 +24,15 @@ namespace TestHelpers
                 _name_sort_builder.Start();
                 _name_sort_builder.WaitForExit();
             }
-            _name_sorter = new System.Diagnostics.Process();
+            var name_sorter = new System.Diagnostics.Process();
             if (Platform.IsPosix)
             {
-                _name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
+                name_sorter.StartInfo.FileName = @"../../../../../../../OpenPractice/Demos/name-sorter/bin/Release/netcoreapp2.0/ubuntu.14.04-x64/publish/name-sorter";
             } else {
-                _name_sorter.StartInfo.FileName = @"..\..\..\..\..\..\..\OpenPractice\Demos\name-sorter\bin\Release\netcoreapp2.0\win10-x64\publish\name-sorter";
+                name_sorter.StartInfo.FileName = @"..\..\..\..\..\..\..\OpenPractice\Demos\name-sorter\bin\Release\netcoreapp2.0\win10-x64\publish\name-sorter";
             }
-            _name_sorter.StartInfo.RedirectStandardOutput = true;
-            return _name_sorter;
+            name_sorter.StartInfo.RedirectStandardOutput = true;
+            return name_sorter;
         }
     }
 }

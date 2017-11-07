@@ -61,6 +61,9 @@ namespace Integration
             _name_sorter.Start();
             string console_output = _name_sorter.StandardOutput.ReadToEnd();
             _name_sorter.WaitForExit();
+            // On windows machines the assertion on string content unexpextedly fails for 
+            // examples 9, 10 and 11 with correct results. We compare length to verify no 
+            // data is lost however a more reliable test would be preffered.
             if (Platform.IsPosix)
             {
                 Assert.Equal(String.Join(Platform.Delimiter, expected_output) + Platform.Delimiter, console_output);

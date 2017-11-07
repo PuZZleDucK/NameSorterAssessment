@@ -13,7 +13,7 @@ namespace TestHelpers
 
         private static string GenerateName(int max_characters_in_name)
         {
-            StringBuilder new_name = new StringBuilder();
+            var new_name = new StringBuilder();
             int name_parts_count = random.Next(4)+1;
             for (; name_parts_count > 0; name_parts_count--)
             {
@@ -31,7 +31,7 @@ namespace TestHelpers
 
         public static string[] Names(int name_count, int max_characters_in_name = 100)
         {
-            string[] random_names = new string[name_count];
+            var random_names = new string[name_count];
             for(; name_count > 0 ; name_count--)
             {
                 random_names[name_count-1] = GenerateName(max_characters_in_name);
