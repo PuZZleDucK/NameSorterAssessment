@@ -52,8 +52,11 @@ The following sections consist of my personal notes for the project. They are in
 - [x] test examples on cli in integration
 - [x] stress testing
 - [x] add alternative CI platforms/providers
-- [ ] add helper methods
+- [x] add helper methods
+- [ ] naming review
 - [ ] SOLID review
+- [ ] comment review
+- [ ] readability review
 - [ ] better erroring on invalid names
 - [ ] error if file does not exist
 - [x] add release candidate
@@ -84,7 +87,7 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [ ] functional (foreach) style at times
 - [x] nice .gitattributes
 - [ ] Fody NullGuard - investigate if time allows
-- [ ] honest about defects
+- [x] honest about defects
 
 Other observations not strictly relevant in no particular order:
 
@@ -110,8 +113,8 @@ Below is a collection of notes and check points I intend to cover that has been 
   - [ ] Liskov Substitution Principle
   - [ ] Interface Segregation Principle
   - [ ] Dependency Inversion Principle
-- [ ] to see how you write tests.
-- [ ] best effort
+- [x] to see how you write tests.
+- [x] best effort
 - [x] a solution that you are proud of
 
 ### Problem Specification
