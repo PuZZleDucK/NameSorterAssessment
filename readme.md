@@ -55,11 +55,12 @@ The following sections consist of my personal notes for the project. They are in
 - [x] add helper methods
 - [x] naming review
 - [x] SOLID review
-- [ ] comment review
+- [x] comment review
 - [x] readability review
-- [ ] better erroring on invalid names
-- [ ] error if file does not exist
+- [x] better erroring on invalid names
+- [x] error if file does not exist
 - [x] add release candidate
+- [ ] update docs and references (check commands in docs work)
 - [ ] review submission (style, documentation, presentation, CI/CD?)
 
 
@@ -81,11 +82,10 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 - [x] stress tests project
 
 - [x] mostly long and descriptive naming
-- [ ] self documenting... comments usually explain "why" or "why not the usual/expected way"
+- [x] self documenting... comments usually explain "why" or "why not the usual/expected way"
 - [x] model / view separation - demo
-- [ ] validation and verbose error reporting
+- [x] validation and verbose error reporting
 - [x] nice .gitattributes
-- [ ] Fody NullGuard - investigate if time allows
 - [x] honest about defects
 
 Other observations not strictly relevant in no particular order:
@@ -104,7 +104,7 @@ Below is a collection of notes and check points I intend to cover that has been 
 
 - problem domain is deliberately simple
 - our goal is not to see you implement a trivial sorting algroithm
-- [ ] how your code communicates it's purpose clearly and with empathy to your potential team members.
+- [x] how your code communicates it's purpose clearly and with empathy to your potential team members.
 - [ ] Caring about how easy your code is to understand and navigate for the next engineer who touches it.
 - [x] Understand your ability to compose quality code that adheres to SOLID principles
   - [x] Single Responsibility Principle

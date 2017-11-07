@@ -15,12 +15,10 @@ namespace NameSort
             return unsorted_names.OrderBy(name =>
             {
                 string[] persons_names = name.Split(' ');
-                if(persons_names.Length > 4)
+                if(persons_names.Length > 4 || persons_names.Length == 0)
                 {
-                  // ERR out here... invalid name
-                  System.Console.WriteLine($"Malformed name detected: {persons_names}");
+                  Console.Error.WriteLine($"Malformed or invalid name detected: '{name}'");
                 }
-                // also ERR on "A name must have at least 1 given name" if possible - blank line
                 string last_name = persons_names.Last();
                 string other_names = String.Join(" ", persons_names.Take(persons_names.Length - 1).ToArray());
                 return last_name + " " + other_names;
