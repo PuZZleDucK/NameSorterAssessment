@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using NameSort;
 using Helpers;
 
@@ -8,7 +9,7 @@ namespace name_sorter
     {
        static void Main(string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length == 0)
             {
                 // No argument given... print help and error out.
                 System.Console.WriteLine(":: NameSorter ::");
@@ -16,24 +17,40 @@ namespace name_sorter
                 Environment.Exit(-1);
             }
             SortInterface name_sorter = null;
-            if (args.Length > 1 && args[1] == "--desc")
+            InputInterface name_source = new FileInput();
+            string[] name_list = null;
+            // process flags
+            if(args.Any("--desc".Contains))
             {
                 name_sorter = new NameSorterReverse();
             } else {
                 name_sorter = new NameSorter();
             }
-            if (args.Length > 0 && System.IO.File.Exists(args[0]))
+ 
+            if(args.Any("--ifile".Contains))
             {
-                string[] sorted_names = name_sorter.SortNames(System.IO.File.ReadAllLines(args[0]));
-                System.Console.WriteLine(String.Join(Platform.Delimiter, sorted_names));
-                System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
+                string file_name = args[Array.IndexOf(args, "--ifile")+1];
+                name_list = name_source.GetNames(file_name);
             }
-             else {
-                // Invalid file given... print help and error out.
-                System.Console.WriteLine(":: NameSorter ::");
-                System.Console.WriteLine(NameSorter.ProgramUsageText());
-                System.Console.WriteLine($" The file '{args[0]}' was not found!");
-                Environment.Exit(-1);
+            // catch origional program behaviour
+            if( name_list == null ) {
+                name_list = name_source.GetNames(args[0]);
+            }
+            string[] sorted_names = name_sorter.SortNames(name_list);
+            System.Console.WriteLine(String.Join(Platform.Delimiter, sorted_names));
+            System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
+           
+ 
+
+            //old and crusty now
+            if (args.Length == 1 && System.IO.File.Exists(args[0]))
+            {
+            } else {
+                        // This should be in output module:
+                // System.Console.WriteLine(":: NameSorter ::");
+                // System.Console.WriteLine(NameSorter.ProgramUsageText());
+                // System.Console.WriteLine($" The file '{args[0]}' was not found!");
+                // Environment.Exit(-1);
             }
             Environment.Exit(0);
         }
