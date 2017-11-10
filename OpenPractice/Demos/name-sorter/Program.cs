@@ -8,15 +8,15 @@ namespace name_sorter
     {
        static void Main(string[] args)
         {
-            // if (args.Length != 1)
-            // {
-            //     // No argument given... print help and error out.
-            //     System.Console.WriteLine(":: NameSorter ::");
-            //     System.Console.WriteLine(NameSorter.ProgramUsageText());
-            //     Environment.Exit(-1);
-            // }
+            if (args.Length != 1)
+            {
+                // No argument given... print help and error out.
+                System.Console.WriteLine(":: NameSorter ::");
+                System.Console.WriteLine(NameSorter.ProgramUsageText());
+                Environment.Exit(-1);
+            }
             SortInterface name_sorter = null;
-            if (args.Length > 1 && args[1] == "--desc") // so bad :p
+            if (args.Length > 1 && args[1] == "--desc")
             {
                 name_sorter = new NameSorterReverse();
             } else {
@@ -28,13 +28,13 @@ namespace name_sorter
                 System.Console.WriteLine(String.Join(Platform.Delimiter, sorted_names));
                 System.IO.File.WriteAllLines(@"sorted-names-list.txt", sorted_names);
             }
-            //  else {
-            //     // Invalid file given... print help and error out.
-            //     System.Console.WriteLine(":: NameSorter ::");
-            //     System.Console.WriteLine(NameSorter.ProgramUsageText());
-            //     System.Console.WriteLine($" The file '{args[0]}' was not found!");
-            //     Environment.Exit(-1);
-            // }
+             else {
+                // Invalid file given... print help and error out.
+                System.Console.WriteLine(":: NameSorter ::");
+                System.Console.WriteLine(NameSorter.ProgramUsageText());
+                System.Console.WriteLine($" The file '{args[0]}' was not found!");
+                Environment.Exit(-1);
+            }
             Environment.Exit(0);
         }
     }
