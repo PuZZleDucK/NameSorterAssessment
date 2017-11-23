@@ -158,3 +158,4 @@ Observations from reviewing GlobalX public repositories on GitHub. They are pres
 ![](https://pbs.twimg.com/media/CyjIC1aUAAAjfCy?format=jpg&name=small)
 
 By the way that's me with Uncle Bob! :D
+
